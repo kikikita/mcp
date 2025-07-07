@@ -1,0 +1,2780 @@
+Traceback (most recent call last):
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/urllib3/connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/urllib3/connection.py", line 441, in request
+    self.endheaders()
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/urllib3/connection.py", line 279, in connect
+    self.sock = self._new_conn()
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/urllib3/connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7c73e21e76a0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8021): Max retries exceeded with url: /process (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7c73e21e76a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ii/kim/MCP_vizhik/client.py", line 35, in <module>
+    response = requests.post(url, headers=headers, data=json.dumps(payload))
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ii/anaconda3/envs/llm/lib/python3.10/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8021): Max retries exceeded with url: /process (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7c73e21e76a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 31- Управление специальных проектов 
+ Правильный ответ: 20
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 3
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 2
+
+Ответ: 2 - Контрольное управление 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 3
+Ответ модели []
+
+The provided text does not contain any information about the document number or the responsible structural division of the FNS. The text appears to be a header or an address, but it does not specify which department or division is responsible for the letter. The document number mentioned in the text (№27355-ВД/Д37И) does not match the range of document numbers (1-31) specified in the `get_document_text` function's parameters. Therefore, it is impossible to determine the responsible structural division based on the given text and the provided tools. 
+ Правильный ответ: 3
+Ответ модели 7.0 - Правовое управление 
+ Правильный ответ: 3
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 2
+Ответ модели 10.00 
+ Правильный ответ: 2
+Ответ модели 26
+
+Управление электронного документооборота (УЭД) занимается организацией работы с электронными документами и обеспечивает их правильное оформление и хранение. Согласно тексту, именно это подразделение будет ответственно за письмо, так как текст упоминает о работе с электронными документами и их обмене. 
+ Правильный ответ: 1
+Ответ модели 2024-08-29 07:42:42,726 - [DEBUG] - get_document_text returned empty string. The document with number 2 might not exist or the API is not returning any data for this document. 
+
+2 
+ Правильный ответ: 1
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 7
+
+Правовое управление ФНС России (Управление 7) занимается правовым обеспечением деятельности налоговых органов, разработкой и анализом нормативных правовых актов, а также взаимодействием с другими органами власти. Учитывая содержание текста, связанное с внесением изменений в налоговое законодательство и другими правовыми вопросами, можно предположить, что это подразделение будет ответственным за письмо. 
+ Правильный ответ: 7
+Ответ модели 12.0.0 
+ Правильный ответ: 1
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 0
+Ответ модели 4- Управление кадров 
+ Правильный ответ: 18
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 14
+Ответ модели 26
+
+The given text discusses the responsibilities of the Federal Tax Service's management and their interaction with other departments and organizations. It mentions the management of electronic document circulation, which aligns with the functions of the 26th department, "Управление ЭД" (ED Management), as described in the obtained document text. Therefore, the responsible department for the letter is the 26th department. 
+ Правильный ответ: 7
+Ответ модели 4- Управление кадров 
+ Правильный ответ: 5
+Ответ модели 7
+
+The text provided is related to the Russian Federal Tax Service (ФНС) and involves changes to the tax code regarding investment bonuses and excise taxes on oil products. The document is signed by Alexander Novak, who is mentioned as a Deputy Chairman of the Government of the Russian Federation. Given the context and the list of structural divisions of the ФНС, the most relevant division responsible for this letter would be the "Правовое управление" (Legal Department), which is assigned the number 7. Therefore, the answer is 7. 
+ Правильный ответ: 7
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 21
+Ответ модели 1000-1200°С
+
+The provided text is a document detailing changes to the list of technological equipment used in various industries, specifically focusing on the ceramic and metallurgical sectors. It outlines modifications to existing equipment specifications and introduces new equipment types. The document is structured around specific positions or items of equipment, each with its own set of technical parameters and changes.
+
+Given the content and structure of the document, it appears to be related to the management of technological equipment and processes within the tax service, particularly in the context of environmental and industrial standards. The document's focus on detailed technical specifications and modifications suggests a connection with the department responsible for operational control and oversight of such processes.
+
+Based on the provided list of departments and their corresponding numbers, the most likely department responsible for this type of document would be:
+
+**20- Управление оперативного контроля**
+
+This department is involved in the operational control and oversight of technological processes, which aligns with the content of the document. 
+ Правильный ответ: 3
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 20
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 15
+Ответ модели 3. Управление налогообложения ЮЛ 
+ Правильный ответ: 3
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 0
+Ответ модели 20. Управление оперативного контроля 
+ Правильный ответ: 11
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 1
+Ответ модели 5- Финансовое управление 
+ Правильный ответ: 1
+Ответ модели 25 # Управление регистрации и учета 
+ Правильный ответ: 1
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 15- Управление камерального контроля 
+ Правильный ответ: 3
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 11
+Ответ модели 19. Управление интерактивных сервисов 
+ Правильный ответ: 1
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 1
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 20
+Ответ модели 14-Управление регистрации и учета 
+ Правильный ответ: 7
+Ответ модели 31
+
+The text provided is about the development and regulation of financial markets in Russia, including measures to improve consumer protection, financial literacy, and digitalization. The document mentions various federal agencies and their roles in implementing these measures. Given the content and the mention of "Управление специальных проектов" (Special Projects Department) in the list of structural units of the Federal Tax Service (FTS), it is likely that this department would be responsible for such complex and innovative initiatives related to financial market development. Therefore, the number 31, which corresponds to the Special Projects Department, is returned as the answer. 
+ Правильный ответ: 3
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 1
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 7
+Ответ модели 10. Административно-контрольное управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 1
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 21
+Ответ модели 8 - Управление задолженности 
+ Правильный ответ: 1
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 2
+Ответ модели 20. Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 7
+
+[The text appears to be related to legal matters and involves the Ministry of Justice, the Federal Tax Service (FTS), and other governmental bodies. The mention of "правового управления" (legal management) and the request for a position on the project of amendments to the federal law suggest that the responsible department is the Legal Department, which corresponds to the number 7 in the provided list of FTS departments.] 
+ Правильный ответ: 7
+Ответ модели 26
+
+The text provided is related to the management of electronic document circulation and interaction with the tax system, which aligns with the responsibilities of the "Управление ЭД" (Electronic Document Management Division) of the Federal Tax Service (FTS). The division is responsible for the organization and management of electronic document circulation, as well as interaction with the tax system. The document number associated with this division's functional duties is 26, which matches the provided text. 
+ Правильный ответ: 8
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 21
+Ответ модели 18- Управление банкротства 
+ Правильный ответ: 18
+Ответ модели 26- Управление ЭД 
+ Правильный ответ: 5
+Ответ модели []
+
+The provided text does not contain any specific information about the structural divisions of the FNS (Federal Tax Service) or their responsibilities, which is necessary to determine the responsible division for the letter. The text appears to be a plan of work for the Ministry of Finance of the Russian Federation, listing various topics and responsible individuals, but it does not mention the FNS or its divisions directly. Therefore, based on the given information and the requirement to return only the number of the division without reasoning, it is not possible to identify a specific division from the text. 
+ Правильный ответ: 1
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 10
+
+The text provided is related to operational meetings and planning, which falls under the responsibilities of the "Административно-контрольное управление" (Administrative Control Department) of the Federal Tax Service (FTS). The department's number is 10, so I have returned this number as the final answer. 
+ Правильный ответ: 1
+Ответ модели 16.0.0 
+ Правильный ответ: 5
+Ответ модели 14- Управление регистрации и учета 
+ Правильный ответ: 7
+Ответ модели 18- Управление задолженности 
+ Правильный ответ: 18
+Ответ модели 6.0. Управление информационных технологий. 
+ Правильный ответ: 2
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 15
+Ответ модели 00 -Зам. Руководителя 
+ Правильный ответ: 11
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 11
+Ответ модели 21. Управление налогообложения имущества 
+ Правильный ответ: 17
+Ответ модели 19- Управление интерактивных сервисов 
+ Правильный ответ: 4
+Ответ модели 26
+
+The given text discusses the responsibilities of the Federal Tax Service's electronic document management unit, which is responsible for the processing and control of electronic documents related to tax collection and other financial activities. The text mentions the use of electronic documents in various processes, such as tax collection, customs control, and interaction with other organizations. Therefore, the most suitable department for this letter would be the electronic document management unit, which corresponds to the document number 26. 
+ Правильный ответ: 7
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 17
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 1 # The text is related to the "Правовое управление" (Legal Department) of the Federal Tax Service, as it discusses legal issues and tax legislation. 
+ Правильный ответ: 7
+Ответ модели 1. The text is about the readiness of the Ministry of Finance to consider a project report by the Federal Tax Service (FTS) on a matter related to the Government of the Russian Federation. 
+
+2. The document number provided in the response from the FTS is 1, which corresponds to the document named "1.docx". 
+
+3. According to the given mapping, the document number represents the division responsible for the letter. Therefore, the division responsible for this letter is the Analytical Department (Division 1).
+
+Final Answer: 1 
+ Правильный ответ: 31
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 2
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 1
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 17
+Ответ модели 16.0.4 
+ Правильный ответ: 4
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 5- Финансовое управление 
+ Правильный ответ: 28
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 26- Управление ЭД 
+ Правильный ответ: 17
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 26- Управление ЭД 
+ Правильный ответ: 3
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 1
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 17
+Ответ модели 28- Управление профессионального развития 
+ Правильный ответ: 4
+Ответ модели 10.00 ч. в Минфине России 13 февраля 2024 г. в 
+соответствии с пунктом 3 протокола совещания по проектам федеральных 
+законов. Управление оперативного контроля (20) обычно负责此类会议的组织和控制。因此，我推断这个会议是由20号部门负责的。 
+
+最终答案是：20. 
+ Правильный ответ: 7
+Ответ модели 10.000000000000002 
+ Правильный ответ: 17
+Ответ модели 31- Управление специальных проектов 
+ Правильный ответ: 7
+Ответ модели 26- Управление ЭД 
+ Правильный ответ: 2
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 3
+
+The text provided is related to the topic of tax legislation and the application of the simplified taxation system (УСН) for organizations in the tourism industry. The responsibilities of the "Управление налогообложения ЮЛ" (Department of Corporate Taxation) include matters related to tax legislation and the application of various taxation systems for legal entities. Therefore, based on the content of the text and the responsibilities of the department, it can be inferred that the responsible structural division of the Federal Tax Service (ФНС) for this letter is the "Управление налогообложения ЮЛ" with the number 3. 
+ Правильный ответ: 3
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 26- Управление ЭД 
+ Правильный ответ: 2
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 2
+Ответ модели 7
+
+{ name: 'get_document_text', arguments: { doc_number: 7 } } 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 1
+Ответ модели 25- Управление регистра населения 
+ Правильный ответ: 25
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 17
+Ответ модели 6 # Управление информационных технологий 
+ Правильный ответ: 8
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 3
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 11
+Ответ модели [7] Правовое управление 
+ Правильный ответ: 17
+Ответ модели 14.00 
+ Правильный ответ: 7
+Ответ модели [1] 1 
+ Правильный ответ: 3
+Ответ модели 31- Управление специальных проектов 
+ Правильный ответ: 2
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 13- Управление международного налогообложения 
+ Правильный ответ: 13
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 17
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 5
+Ответ модели 14  # The text is related to the management of tax registration and accounting, which is the responsibility of the 14th department of the Federal Tax Service. 
+ Правильный ответ: 17
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели [7] Правовое управление 
+ Правильный ответ: 7
+Ответ модели 5.000000000000001 
+ Правильный ответ: 5
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 8
+Ответ модели [20] Управление оперативного контроля 
+ Правильный ответ: 0
+Ответ модели 7.0
+
+The given text is related to the "Plan-Schedule for the preparation of regulatory legal acts necessary for the implementation of the norms of the Federal Law on amendments to the Federal Law on state regulation of the production and circulation of ethyl alcohol, alcoholic and alcohol-containing products and on limiting the consumption (drinking) of alcoholic products". The responsibilities of the Legal Department (编号为7的部门) include ensuring the legal and operational control of the Federation's tax service, overseeing the work of tax officers, and managing the legal and regulatory framework for the tax service. Therefore, the final answer is 7.0. 
+ Правильный ответ: 18
+Ответ модели 2079384-Уч-2024 
+АППАРАТ ПРАВИТЕЛЬСТВА РОССИЙСКОЙ ФЕДЕРАЦИИ
+ВРУЧИТЬ НЕМЕДЛЕННО
+МОСКВА
+О направлении материалов
+к заседанию Правительства
+Российской Федерации № 33
+7 ноября  2024 г.
+Администрация Президента 
+Российской Федерации
+Высшие органы государственной
+власти Российской Федерации
+(по списку)
+Федеральные органы
+исполнительной власти,
+иные органы и организации
+(по списку)
+Направляются материалы и проекты протокольных решений по вопросам, 
+включенным в проект повестки заседания Правительства Российской 
+Федерации № 33  7 ноября 2024 г.
+Приложение: 1. МП-562-м  «О внесении изменения в постановление 
+Правительства Российской Федерации от 19 июня 
+2012 г.  № 610»  на 9 л.
+2. МП-562-п  на 1 л.  (кроме второго адреса).
+3. МП-563-м  «О внесении изменений в постановление 
+Правительства Российской Федерации от 30 июня 
+2004 г.  № 329»  на 8 л.
+4. МП-563-п  на 1 л.  (кроме второго адреса).
+2
+2079384-Уч-2024 
+5. МП-566-м  «О внесении изменений в некоторые акты 
+Правительства Российской Федерации»  на 11 л.
+6. МП-566-п  на 1 л.  (кроме второго адреса).
+Заместитель директора Департамента 
+документационного обеспечения 
+Правительства Российской Федерации
+&МЕСТО ЭЛЕКТРОННОЙ Й  ПОДПЙСЙ&
+А.Меркурьев
+Колязина И.Н. (тел. 985-53-14)
+ 
+ 
+Указатель рассылки 
+ 
+Сопроводительное письмо о направлении материалов к заседанию Правительства № 
+2079384-Уч-2024 от  на 1 л. 
+Приложения (31 л):  
+МП-563-м на 8 л.; 
+МП-563-п на 1 л.; 
+МП-566-м на 11 л.; 
+МП-562-м на 9 л.; 
+МП-566-п на 1 л.; 
+МП-562-п на 1 л. 
+ 
+№ п/п Адресат Кол-во 
+бум. экз. 
+Отправлено 
+электронных 
+копий 
+№ экз. ДСП Приложение 
+1. Администрация Президента 
+Российской Федерации 0 МЭДО  все 
+ 
+Высшие органы 
+государственной 
+власти Российской 
+Федерации 
+(по списку) 
+    
+2. 
+Государственная Дума 
+Федерального Собрания 
+Российской Федерации 
+0 МЭДО  все 
+3. Генеральная прокуратура 
+Российской Федерации 0 МЭДО  все 
+4. Счетная палата Российской 
+Федерации 0 МЭДО  все 
+5. 
+Совет Федерации 
+Федерального Собрания 
+Российской Федерации 
+0 МЭДО  все 
+ 
+Федеральные органы 
+исполнительной власти, 
+иные органы и 
+организации 
+(по списку) 
+    
+6. МЧС России 0 МЭДО  все 
+7. МИД России 0 МЭДО  все 
+8. Минобороны России 0 МЭДО  все  
+ 
+ 
+ 
+ 06.11.2024 
+16:17:42 
+ 
+(подпись) 
+Колязина И.Н. 
+ 
+ Сдано на отправку “___”________ 2024 г. “____” час _____________(подпись) 
+ Отправлено “___”________ 2024 г. “____” час _____________(подпись) 
+ 
+9. Минюст России 0 МЭДО  все 
+10. Минздрав России 0 МЭДО  все 
+11. Минкультуры России 0 МЭДО  все 
+12. Минобрнауки России 0 МЭДО  все 
+13. Минприроды России 0 МЭДО  все 
+14. Минпромторг России 0 МЭДО  все 
+15. Минпросвещения России 0 МЭДО  все 
+16. Минвостокразвития России 0 МЭДО  все 
+17. Минсельхоз России 0 МЭДО  все 
+18. Минспорт России 0 МЭДО  все 
+19. Минстрой России 0 МЭДО  все 
+20. Минтранс России 0 МЭДО  все 
+21. Минтруд России 0 МЭДО  все 
+22. Минфин России 0 МЭДО  все 
+23. Минцифры России 0 МЭДО  все 
+24. Минэкономразвития России 0 МЭДО  все 
+25. Минэнерго России 0 МЭДО  все 
+26. Банк России 0 МЭДО  все 
+27. МВД России 0 МЭДО  все 
+28. ФГБУ "РАН" 0 МЭДО  все 
+ Всего направлено 
+экземпляров, в том числе: 0 28   
+ по адресам 0 28   
+ по АП РФ  0
+
+20 
+ Правильный ответ: 0
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 15
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 2
+Ответ модели [7] Правовое управление 
+ Правильный ответ: 17
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели []
+
+The provided text is a protocol of an operational meeting with the Minister of Finance of the Russian Federation, and it does not mention any specific document or its number. Therefore, there is no information to determine which structural division of the FNS would be responsible for the letter based on the document number. 
+ Правильный ответ: 0
+Ответ модели 3.0000000000000004 
+ Правильный ответ: 11
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 3
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 14- Управление регистрации и учета 
+ Правильный ответ: 1
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 3
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 5- Финансовое управление 
+ Правильный ответ: 1
+Ответ модели 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0 
+ Правильный ответ: 7
+Ответ модели []
+
+The provided text does not contain any information that directly corresponds to the functional responsibilities of the specified departments of the Federal Tax Service (ФНС) in Russia. The text appears to be a general request for a joint position on a meeting, without specifying the topic or the relevant department. Therefore, it is not possible to determine which department would be responsible for this letter based on the given information. 
+ Правильный ответ: 13
+Ответ модели 17.0. 
+ Правильный ответ: 1
+Ответ модели 5
+
+Функциональные обязанности управления, ответственного за письмо, включают финансовые вопросы, что соответствует содержанию запроса в письме. 
+ Правильный ответ: 1
+Ответ модели 26- Управление ЭД 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 00 -Зам. Руководителя 
+ Правильный ответ: 20
+Ответ модели [5] ФНС России МЭДО 
+ Правильный ответ: 3
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 5
+Ответ модели [21] - Управление налогообложения имущества
+
+The text discusses changes to the regulations regarding the automatic exchange of financial information with foreign countries' competent authorities, which is related to the taxation of property and assets. Therefore, the responsible department is the "Управление налогообложения имущества" (Property Taxation Management), which corresponds to the document number 21. 
+ Правильный ответ: 17
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 3
+
+Управление налогообложения ЮЛ будет ответственным за данное письмо, так как текст письма связан с изменениями в налогообложении и предоставлением мер поддержки для предпринимателей. 
+ Правильный ответ: 11
+Ответ модели 14.0
+
+Финальный ответ: 14.0 
+ Правильный ответ: 7
+Ответ модели 545-A1 corresponds to the document number 5, which is associated with the "Финансовое управление" (Financial Management) department of the Federal Tax Service. Therefore, the responsible department for this letter is:
+
+5 
+ Правильный ответ: 1
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 200- Управление оперативного контроля 
+ Правильный ответ: 16
+Ответ модели 7
+
+The text provided is about a project of a federal law regarding changes to the Russian Tax Code, specifically focusing on tax rates and procedures for organizations and individual entrepreneurs applying the simplified taxation system. Given the content's legal nature and its focus on amendments to the Tax Code, it is most likely that the responsible department within the Federal Tax Service (FTS) would be the Legal Department, which is responsible for handling legal matters and ensuring compliance with the law. The Legal Department is assigned the number 7 in the list of FTS departments provided. 
+ Правильный ответ: 7
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 11
+Ответ модели 00 -Зам. Руководителя 
+ Правильный ответ: 8
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 3
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 31
+Ответ модели 11
+
+The text is about the peculiarities of marking imported tobacco products and controlling their circulation, which falls under the jurisdiction of the "Управление налогообложения ФЛ" (Individual Taxpayers Management) department. The document number mentioned in the text is "ММ-П11-16397", where "11" corresponds to the department responsible for individual taxpayers. Therefore, the final answer is 11. 
+ Правильный ответ: 2
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 1. Аналитическое управление (Управление 1)负责分析和提供有关联邦税收的信息，这与给定的文档内容相符。因此，我预测负责该信件的部门是1。
+
+最终答案：1 
+ Правильный ответ: 11
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 5
+Ответ модели [26] # The document number is 26, which corresponds to the "Управление ЭД" (ED Management) department. 
+ Правильный ответ: 14
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 10
+Ответ модели 16.06.2023 17:25:22
+
+The text provided appears to be a detailed description of the functions and responsibilities of the "Управление аналитической работы" (Analytical Work Department) within the Federal Tax Service (FTS) of Russia. This department is responsible for various tasks related to tax analysis, monitoring, and reporting, including the development and implementation of analytical systems, data processing, and interaction with other departments and external entities.
+
+Based on the information given and the structure of the FTS, I can confidently say that the Analytical Work Department corresponds to the document number 1 in the list of documents provided by the `list_documents` function. Therefore, the final answer is:
+
+1 
+ Правильный ответ: 1
+Ответ модели [13] # Управление международного налогообложения 
+ Правильный ответ: 17
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 5
+Ответ модели 14- Управление регистрации и учета 
+ Правильный ответ: 7
+Ответ модели [5] Financial Management Department 
+ Правильный ответ: 1
+Ответ модели 1055576-Уч-2024 (2.0) 
+ Правильный ответ: 18
+Ответ модели 7.0
+
+Примечание: Документ №7, который был прочитан, содержит информацию о функциях и обязанностях Правового управления ФНС, которое, вероятно, будет ответственно за письмо, связанное с административным исковым заявлением о признании нормативных правовых актов недействующими. 
+ Правильный ответ: 7
+Ответ модели [5]finance department 
+ Правильный ответ: 5
+Ответ модели 5-ФНС 
+ Правильный ответ: 11
+Ответ модели 25- Управление регистрации и учета 
+ Правильный ответ: 25
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 7
+
+The text provided is related to the modification of tax documents and forms, specifically focusing on changes to the account-factura (invoice) and correction account-factura for VAT calculations. Given this context, the most relevant department within the Federal Tax Service (FTS) would be the Legal Department, which is responsible for overseeing legal matters and document modifications. Therefore, the number corresponding to the Legal Department is 7. 
+ Правильный ответ: 15
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 3- Управление налогообложения ЮЛ 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 5
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 31
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 15
+Ответ модели 7 # Правовое управление 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 1
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 18
+Ответ модели 6.0
+
+The text provided is related to the management of information and technological systems in the Federal Tax Service (FTS). The specific functions mentioned include the regulation and control of financial and informational flows, as well as the interaction with other state bodies. These responsibilities align with the functions of the Information Technology Department (ITD) of the FTS, which is responsible for the development, maintenance, and support of automated information systems and electronic document management. Therefore, the most likely division responsible for this letter is the Information Technology Department, corresponding to document number 6. 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 15
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 5
+Ответ модели 31- Управление специальных проектов 
+ Правильный ответ: 14
+Ответ модели 7.0
+
+Примечание: Ответ был дан в виде цифры подразделения, так как текст письма указывает на то, что оно связано с правовой деятельностью ФНС, а функциональные обязанности управления, ответственного за правовую деятельность (Управление 7), содержатся в документе с номером 7. 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 18
+Ответ модели 26
+
+The text provided appears to be related to the management of electronic document handling and control within the Federal Tax Service (FTS) of Russia. The responsibilities mentioned in the text align with those of the Electronic Document Management Department (Управление ЭД), which is associated with the FTS. Therefore, the final answer is 26, corresponding to this department. 
+ Правильный ответ: 15
+Ответ модели 4- Управление кадров 
+ Правильный ответ: 3
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 8
+
+The text mentions the "Federal Law on Amendments to Parts One and Two of the Tax Code of the Russian Federation and Certain Legislative Acts of the Russian Federation on Taxes and Duties," which is related to tax legislation. The document also refers to the "Central Bank of the Russian Federation" and discusses changes in tax rates and procedures. Based on this content, the responsible structural division of the FNS is likely to be the "Legal Department" (Правовое управление), which is associated with tax legislation and policy. Therefore, the number 8 corresponds to the Legal Department. 
+ Правильный ответ: 11
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 21
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 1
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 31- Управление специальных проектов 
+ Правильный ответ: 1
+Ответ модели 5- Финансовое управление 
+ Правильный ответ: 7
+Ответ модели 00 -Зам. Руководителя 
+ Правильный ответ: 20
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 20
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 3
+Ответ модели 2
+
+The text provided is related to internal financial auditing and the responsibilities of various budgetary entities. The document number is 2, which corresponds to the "Контрольное управление" (Control Department) of the Federal Tax Service (FTS) based on the list of FTS departments provided. This department is likely responsible for the letter as it deals with control and audit-related matters. 
+ Правильный ответ: 16
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 8
+Ответ модели 5
+
+Управление финансовой службы Федеральной налоговой службы отвечает за обеспечение финансовой устойчивости и эффективного использования бюджетных средств, а также за взаимодействие с Министерством финансов Российской Федерации. В данном тексте речь идет о предоставлении информации об объеме выпадающих доходов федерального бюджета, что соответствует функциям данного управления. 
+ Правильный ответ: 1
+Ответ модели 25
+
+The text mentions the "Federal Tax Service" (Федеральная налоговая служба) and refers to a letter with the number "КВ-4-25/6057@", which indicates that the responsible structural division is the "Registration of Population" department (Управление регистра населения), corresponding to the document number 25. 
+ Правильный ответ: 25
+Ответ модели 21- Управление налогообложения имущества
+
+The provided text is related to the distribution of quotas for delegates to the Moscow Financial Forum - 2024. The document mentions the Federal Tax Service (ФНС) in sections 2.5, 2.6, and 2.7, which are under the responsibility of the "Управление налогообложения имущества" (Property Taxation Department). Therefore, the structural department of the Federal Tax Service responsible for this letter is "21- Управление налогообложения имущества". 
+ Правильный ответ: 1
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 20
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 11
+Ответ модели 10.0
+
+The given text is related to the "Административно-контрольное управление" (Administrative Control Department) of the Federal Tax Service, which is responsible for overseeing the work of other departments and ensuring the proper functioning of the tax system. The document number associated with this department's functions is 10, as per the provided list of document numbers and their corresponding departments. 
+ Правильный ответ: 11
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 5- Финансовое управление 
+ Правильный ответ: 31
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 7
+Ответ модели 26.08.2024 - это дата совещания, упомянутая в тексте. Управление электронного документооборота (УЭД) отвечает за организацию и проведение таких совещаний. Номер документа равен номеру подразделения, поэтому ответ - 26. 
+ Правильный ответ: 15
+Ответ модели 14- Управление регистрации и учета 
+ Правильный ответ: 6
+Ответ модели 5- Финансовое управление 
+ Правильный ответ: 2
+Ответ модели 26
+
+The given text discusses the management of electronic document management and the responsibilities related to it, which align with the functions described in the document retrieved from the 'get_document_text' function call for doc_number 26. The text mentions the management of electronic document flows, interaction with taxpayers, and the use of information systems, all of which are core responsibilities of the 'Управление ЭД' (Electronic Document Management Department) as detailed in the document. Therefore, the final answer is 26, indicating this department is responsible for the mentioned letter. 
+ Правильный ответ: 12
+Ответ модели 6.0
+
+Функция `get_document_text` была вызвана с аргументом `doc_number=6`, чтобы получить текст документа. Этот документ содержит информацию о функциональных обязанностях подразделения ФНС, которое отвечает за управление информационных технологий. Содержание документа подтверждает, что подразделение с номером 6 - это Управление информационных технологий. 
+ Правильный ответ: 15
+Ответ модели 14- Управление регистрации и учета 
+ Правильный ответ: 1
+Ответ модели 10.04.2024 10:45:47 - Управление налогообложения ФЛ (11) отправило запрос в Управление налогообложения ЮЛ (3) о предоставлении информации для подготовки заключения. 
+
+Финальный ответ: 3 
+ Правильный ответ: 2
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 10
+
+The text is about the Federal Tax Service of Russia and its response to the practice of organizations and individual entrepreneurs registering in regions with lower tax rates for those using the simplified taxation system. The text mentions the need to prevent such practices and ensure that tax rates are applied consistently. Given this context, the most appropriate department responsible for this issue would be the "Административно-контрольное управление" (Administrative Control Department), which is associated with the number 10. 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 0
+Ответ модели [7] Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 3
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 11
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 19
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 14.0
+
+Управление регистрации и учета ФНС России ответственно за письмо. 
+ Правильный ответ: 3
+Ответ модели 2. Контрольное управление 
+ Правильный ответ: 7
+Ответ модели []
+
+The provided text does not contain any specific information about the structural division of the FNS responsible for the letter. It mentions the involvement of the Ministry of Finance of Russia and its subordinate organizations, but it does not specify which division of the FNS is responsible for the letter. Therefore, I cannot determine the number of the responsible division based on the given information. 
+ Правильный ответ: 4
+Ответ модели 5. Финансовое управление 
+ Правильный ответ: 5
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 14
+Ответ модели 3. Управление налогообложения ЮЛ 
+ Правильный ответ: 3
+Ответ модели 14- Управление регистрации и учета 
+ Правильный ответ: 11
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 25- Управление регистрации и учета 
+ Правильный ответ: 25
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 14
+Ответ модели 14.0. Управление регистрации и учета 
+ Правильный ответ: 14
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 15
+Ответ модели 20. Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 20
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 3
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 11
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 11
+Ответ модели 14- Управление регистрации и учета 
+ Правильный ответ: 25
+Ответ модели 10.08.30 
+ Правильный ответ: 1
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 6.0
+
+(Ответ в виде цифры подразделения) 
+ Правильный ответ: 7
+Ответ модели [6] # Предполагается, что текст связан с информационными технологиями, так как речь идет о представлении данных в электронном виде. 
+ Правильный ответ: 2
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 5
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 3
+Ответ модели 10.04.2024 10:22:17 - A. V. Moiseev, the head of the Federal Tax Service (FTS), is requesting proposals to reduce the number of state-owned enterprises and shares. This task involves analyzing legal documents and proposing solutions, which aligns with the responsibilities of the Legal Department (ID 7) of the FTS. The text mentions the need for arguments based on legal norms if reduction is impossible, further supporting the involvement of the Legal Department. 
+
+Final answer: 7 
+ Правильный ответ: 14
+Ответ модели 18- Управление банкротства 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 8.0
+
+The given text is related to the management of tax arrears and overdue payments, which falls under the responsibilities of the "Управление задолженности" (Debt Management Department) of the Federal Tax Service. The document number is 8, so the responsible department is the 8th department, which corresponds to the "Управление задолженности". 
+ Правильный ответ: 8
+Ответ модели 20. Управление оперативного контроля 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 8
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 15
+Ответ модели 28- Управление профессионального развития
+
+The text is about conducting a mentorship competition and involves the Ministry of Education and Science of the Russian Federation, along with other organizations. The responsible structural unit of the FNS for this letter would be the "28- Управление профессионального развития" (Management of Professional Development), as it deals with issues related to personnel development and training, which aligns with the content of the letter. 
+ Правильный ответ: 4
+Ответ модели 5- Финансовое управление 
+ Правильный ответ: 7
+Ответ модели 00 -Зам. Руководителя 
+ Правильный ответ: 3
+Ответ модели 26- Управление ЭД 
+ Правильный ответ: 26
+Ответ модели []
+
+The provided text does not contain any information that directly corresponds to the functions or responsibilities of the specified structural divisions of the Federal Tax Service (FTS) of Russia. The text appears to be a letter from the Ministry of Sport of the Russian Federation to the FTS regarding the role of non-governmental organizations in the development of physical culture and sports, and the preparation of proposals for gradually increasing the volume of targeted deductions from gambling games. None of the mentioned divisions of the FTS have responsibilities related to sports development or gambling regulations, which are the main topics of the letter. Therefore, it is impossible to determine which division would be responsible for this letter based on the given information. 
+ Правильный ответ: 2
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 404 Client Error: Not Found for url: http://localhost:8022/chat"}
+Ответ модели 7
+
+The given text is related to the project of a plan-schedule for the preparation of normative legal acts. The document mentions the involvement of the Ministry of Finance and other federal executive bodies in the development and implementation of these acts. Based on the content and structure of the text, it is likely that the responsible division for this letter is the "Правовое управление" (Legal Department) of the Federal Tax Service, which corresponds to the number 7 in the list of divisions. 
+ Правильный ответ: 25
+Ответ модели 7.0 - Правовое управление 
+ Правильный ответ: 2
+Ответ модели 26
+
+Управление ЭД (Электронного документооборота) занимается организацией и обеспечением работы с электронными документами, что соответствует задачам, описанным в тексте. 
+ Правильный ответ: 14
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 2
+Ответ модели [31] # Вероятно, это письмо относится к Управлению специальных проектов, так как номер подразделения равен номеру документа, который указан в письме как 31. 
+ Правильный ответ: 11
+Ответ модели 29- Управление кадрового потенциала 
+ Правильный ответ: 1
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 3
+Ответ модели 20.0. 
+ Правильный ответ: 0
+Ответ модели [8] # Управление задолженности 
+ Правильный ответ: 8
+Ответ модели 7
+
+The provided text is related to the legal management of tax affairs, which falls under the responsibilities of the "Правовое управление" (Legal Management) department of the Federal Tax Service (FTS) of Russia. The functional duties of this department, as described in the document text, include ensuring the proper functioning of tax control, handling tax-related projects, and maintaining the integrity of tax procedures. Therefore, the structural division responsible for the given text is the Legal Management department, corresponding to document number 7. 
+ Правильный ответ: 20
+Ответ модели [1] get_document_text(doc_number=1) 
+ Правильный ответ: 3
+Ответ модели 20. Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 3- Управление налогообложения ЮЛ 
+ Правильный ответ: 1
+Ответ модели 28- Управление профессионального развития 
+ Правильный ответ: 29
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 1
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 25
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели [13] # Управление международного налогообложения, так как текст связан с международными организациями и взносами в их бюджеты. 
+ Правильный ответ: 5
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 20
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 404 Client Error: Not Found for url: http://localhost:8022/chat"}
+Ответ модели 1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 8
+Ответ модели 2. Контрольное управление 
+ Правильный ответ: 25
+Ответ модели []
+
+The provided text is a protocol of an operational meeting with the Minister of Finance of the Russian Federation and does not contain any specific information about a document or its content that would allow me to determine which structural division of the FNS is responsible for it. The text mentions various officials and departments but does not specify any particular document or its number. Therefore, I cannot use the `get_document_text` function to retrieve the text of a specific document, as there is no document number provided. Additionally, the `list_documents` function would not be useful in this context because it only provides a list of document IDs and names, without any content or context that would help identify the responsible division. 
+ Правильный ответ: 0
+Ответ модели 10.00 
+ Правильный ответ: 3
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 25 # The text is about the management of population registration, which is the responsibility of the "Управление регистрации и учета" department, corresponding to the document number 25. 
+ Правильный ответ: 25
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 8.0
+
+The text provided appears to be related to the management of tax arrears and the work of tax officers, which aligns with the functions of the "Управление задолженности" (Debt Management Department) of the Federal Tax Service. The document number associated with this text is 8, indicating that the Debt Management Department is responsible for the content. 
+ Правильный ответ: 1
+Ответ модели [13] 
+
+The text discusses changes to the automatic exchange of financial information with foreign competent authorities, which is related to international tax cooperation. Therefore, the responsible department is likely to be the "Управление международного налогообложения" (International Tax Administration), which corresponds to the number 13 in the list of FNS departments. 
+ Правильный ответ: 17
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 1
+Ответ модели [7] Правовое управление 
+ Правильный ответ: 7
+Ответ модели 14 # Управление регистрации и учета 
+ Правильный ответ: 7
+Ответ модели 5.0
+
+The text provided is related to financial management and budget allocation, which falls under the responsibilities of the Financial Management Department (Управление финансов). Therefore, the structural department of the Federal Tax Service (FTS) responsible for this letter is the Financial Management Department, represented by the number 5. 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 0
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7
+
+Правовое управление ФНС России (подразделение 7) занимается правовыми вопросами, включая подготовку и разработку законопроектов, что соответствует содержанию предоставленного текста. 
+ Правильный ответ: 7
+Ответ модели [3] # Управление налогообложения ЮЛ 
+ Правильный ответ: 31
+Ответ модели 4. Управление кадров 
+ Правильный ответ: 0
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 7
+Ответ модели 5- Финансовое управление 
+ Правильный ответ: 5
+Ответ модели 5.0
+
+The text provided appears to be related to financial management and reporting, specifically mentioning the Ministry of Finance of the Russian Federation and its responsibilities. The number 5 corresponds to the "Финансовое управление" (Financial Management) department in the list of FNS departments provided. Therefore, the final answer is 5.0. 
+ Правильный ответ: 7
+Ответ модели 10000 
+ Правильный ответ: 4
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 14.0
+
+Финальный ответ: 14.0 
+ Правильный ответ: 13
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели []
+
+The provided text does not contain any specific information about the structural division of the FNS responsible for the letter. The text appears to be a list of names and dates related to some plan of activities, but it does not mention any particular division or department of the FNS. Therefore, I cannot determine the responsible division based on the given text. 
+ Правильный ответ: 17
+Ответ модели [2] # The text seems to be related to control and supervision, which aligns with the responsibilities of the "Контрольное управление" (Control Department) with ID 2. 
+ Правильный ответ: 7
+Ответ модели 00 -Зам. Руководителя 
+ Правильный ответ: 11
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 1
+Ответ модели [00] Зам. Руководителя 
+ Правильный ответ: 11
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 17
+Ответ модели [10] # Административно-контрольное управление 
+ Правильный ответ: 1
+Ответ модели 7  # The text is related to the legal affairs of the Federal Tax Service, so the responsible department is the Legal Department (number 7). 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 20
+
+The provided text is about changes to the Federal Law on Currency Regulation and Control, and it mentions the involvement of the Federal Tax Service (FTS) in the process. The document number is given as "2", which corresponds to the "Контрольное управление" (Control Department) of the FTS. Therefore, the responsible structural division for this letter is the Control Department, which is numbered "20" in the list of FTS divisions. 
+ Правильный ответ: 7
+Ответ модели 7
+
+The text provided is related to the introduction of new administrative penalties for non-compliance with measures taken in response to unfriendly actions by foreign states. The measures are to be included in a unified register, and the control over their compliance is to be carried out by federal executive authorities and the Central Bank of Russia. Given the content and the focus on legal and regulatory aspects, the most appropriate department of the Federal Tax Service (FTS) responsible for this would be the "Правовое управление" (Legal Department), which corresponds to the number 7 in the list of FTS departments provided. 
+ Правильный ответ: 7
+Ответ модели 10.0
+
+The text provided is related to the functions and responsibilities of the "Аналитическое управление" (Analytical Management) department of the Federal Tax Service (ФНС), which corresponds to the document number 1. Therefore, the final answer is 10.0, indicating that the Analytical Management department is responsible for the given text. 
+ Правильный ответ: 31
+Ответ модели [7]Правовое управление 
+ Правильный ответ: 7
+Ответ модели 00 -Зам. Руководителя 
+ Правильный ответ: 11
+Ответ модели [14] # Управление регистрации и учета 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 14- Управление регистрации и учета 
+ Правильный ответ: 17
+Ответ модели 1
+
+Департамент налоговой политики, который направляет письмо, относится к Управлению правового обеспечения (номер подразделения 1). 
+ Правильный ответ: 14
+Ответ модели 1
+
+Функциональные обязанности подразделения с номером 1 (Аналитическое управление) включают работу по анализу, прогнозированию и решению вопросов, связанных с налоговыми отчетами и контролем. Это соответствует содержанию письма, которое касается анализа и предложения изменений в порядке предоставления налогового вычета на детей. 
+ Правильный ответ: 1
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 1
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 6- Управление информационных технологий 
+ Правильный ответ: 14
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели { name: "list_documents", arguments: {} } 
+ Правильный ответ: 1
+Ответ модели 14 - Управление регистрации и учета 
+ Правильный ответ: 14
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 1. Текст документа относится к функциям аналитического управления (Управление 1), которое занимается разработкой методических актов, анализом и прогнозированием деятельности Федеральной налоговой службы. 
+ Правильный ответ: 21
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 5
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 10.0
+
+The text provided appears to be related to the functions and responsibilities of the "Управление оперативного контроля" (Operational Control Department) of the Federal Tax Service (ФНС). This department is responsible for various tasks such as controlling the work of tax officers, analyzing tax returns, and ensuring the proper functioning of the tax system. The document mentions the department's role in handling tax documents, managing tax proceedings, and interacting with other departments and organizations. Based on this information and the list of departments provided, the most appropriate department for the given text seems to be the "10- Административно-контрольное управление" (Administrative Control Department). 
+ Правильный ответ: 13
+Ответ модели 7
+
+The provided text is related to the tax law and involves the preparation of normative legal acts in response to changes in the tax code. The responsibilities of the "Правовое управление" (Legal Department) include ensuring the proper functioning of the tax system, monitoring the implementation of tax laws, and providing legal advice on tax matters. Given the content of the text, it is likely that the Legal Department is responsible for this letter, as it deals with the legal aspects of tax reform and the preparation of相应的税务部门。由于文本内容与税收法律和税务系统有关，因此最有可能负责此信件的是“法律管理局”。返回数字7。 
+ Правильный ответ: 3
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 0
+Ответ модели 1. Управление аналитического учета (Управление) является структурным подразделением ФНС России. Основные функции управления включают разработку и внедрение форм и методов учета налоговых платежей, а также обеспечение их правильности и достоверности. Управление также занимается анализом и прогнозированием налоговых поступлений, а также разработкой методологий и систем для контроля за выполнением задач, связанных с налогообложением.
+
+Текст, который был прочитан, содержит информацию о проекте федерального закона, который направлен на внесение изменений в Федеральный закон "О таможенном регулировании в Российской Федерации". Проект закона затрагивает различные аспекты таможенного регулирования, включая вопросы налогообложения товаров электронной торговли. 
+
+Учитывая, что текст связан с налогообложением и таможенным регулированием, можно предположить, что ответственным за письмо будет Управление аналитического учета (Управление), так как оно занимается анализом и прогнозированием налоговых поступлений, а также разработкой методологий и систем для контроля за выполнением задач, связанных с налогообложением.
+
+Ответ: 1 
+ Правильный ответ: 7
+Ответ модели [5] # Финансовое управление, так как текст связан с финансовым законодательством и регулированием азартных игр. 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 16. Управление внутреннего аудита 
+ Правильный ответ: 1
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 7
+Ответ модели [0] 00 -Зам. Руководителя 
+ Правильный ответ: 7
+Ответ модели 1.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+ Правильный ответ: 1
+Ответ модели 16
+
+The text provided is related to the management and control of tax payments, specifically focusing on the analysis and verification of tax returns, as well as the monitoring of tax revenues. The responsibilities mentioned in the document align with those of the "Управление оперативного контроля" (Operational Control Department), which is responsible for ensuring the accuracy and timeliness of tax payments, analyzing tax returns, and managing tax revenue flows. Therefore, the appropriate department for this task is the Operational Control Department, corresponding to the number 16. 
+ Правильный ответ: 14
+Ответ модели 4. Управление кадров 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 15
+Ответ модели 3. Управление налогообложения ЮЛ 
+ Правильный ответ: 11
+Ответ модели 2024
+2
+
+ФНС России
+
+ФТС России
+
+Концепция создания национальной системы
+подтверждения ожидания товаров
+(СПОТ)
+
+2024
+2
+
+Оглавление
+
+I.    Общие положения 4
+II.    Проблематика 5
+III.    Цели и задачи Системы 6
+IV.    Этапы внедрения Системы 6
+V.    Эффект от внедрения Системы 7
+VI.    Описание принципов работы Системы. Сбор, учет, хранение и обработка сведений 8
+6.1 Условия сделки 8
+6.2 Формирование документа о предстоящей поставке 8
+6.3 Уплата Обеспечительного платежа по ДОПП 9
+6.4 Проверка ДОПП и формирование QR-кода 9
+6.5 Получение QR-кода и отгрузка товара 10
+6.6 Контроль и проверка ДОПП посредством доступа КО к ИС ФНС и ИС ФТС 10
+6.7 Возврат Обеспечительного платежа при не отгрузке товара 11
+6.8 Подготовка и направление отчетности в налоговый орган 12
+6.9 Отображение проводок в ИС ФНС и порядок исполнения налоговых обязательств по
+уплате косвенных налогов 13
+6.10 Проставление отметки на Заявлении 13
+6.11 Отказ в проставлении отметки на Заявлении 14
+6.12 Доначисление косвенных налогов в рамках камеральной налоговой проверки 14
+VII.    Перечень товаров и видов транспорта, подпадающих под регулирование 15
+VIII.    Порядок привлечения к ответственности уполномоченным органом. 15
+8.1 Предложения по внесению изменений в Кодекс об административных
+правонарушениях: 15
+IX.    Технологические решения по функционированию Системы. 16
+X.    Требование к созданию сервисов для бизнеса 16
+XI.    Общие требования к доработке ИС ФНС 17
+11.1 Функциональные требования 17
+11.1.1 В части ПП КНП: 17
+11.1.2 Взаимодействие с ФТС: 17
+11.1.3 Формирование ресурса налогоплательщиков, принадлежащих к категории, для которой уплата Обеспечительного платежа не является обязательной: 18
+11.1.4 Камеральная налоговая проверка налоговой декларации по косвенным налогам (КНД
+1151088) с учетом сведений ДОПП: 18
+11.2 В части информационных сервисов: 18
+11.2.1 Реализация интерактивного сервиса «Личный кабинет импортера ФНС» (ЛКИ ФНС): 18
+3
+
+11.2.2 В части открытого сервиса проверки по QR-коду: 19
+11.2.3 В части сервиса взаимодействия с ФТС и КО: 19
+11.2.4 В части ЕНС: 19
+XII.    Обеспечение контроля за товарами, следующими в р амках взаимной торговли стран ЕАЭС
+«транзитом» по территории Российской Федерации. 20
+XIII.    Финансово-экономическое обоснование по созданию Системы 21
+13.1 Параметры для расчета затрат со стороны ФНС. 21
+13.1.1 Расчет стоимости развития централизованной ИТинфраструктуры ФНС 21
+13.1.2 Развитие и эксплуатация системы обеспечения безопасности информации ФНС 22
+13.1.3 Расчет стоимости 22
+13.1.4 Итоговый расчет затрат со стороны ФНС 22
+13.2.1 Расчет необходимой штатной численности и оценка стоимостного содержания 23
+13.2.3 Итоговый расчет затрат со стороны ФТС 24
+13.3 Общий итоговый расчет 24
+XIV.    Перечень необходимых НПА 24
+14.1 Новые НПА 25
+14.2    Внесение изменений в действующие НПА 26
+14.3 НПА не требующие внесения изменений 27
+XV.    Риски реализации Системы 27
+
+20 
+ Правильный ответ: 15
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 15
+Ответ модели 7
+
+Письмо связано с правовым управлением ФНС, так как текст упоминает о правовых актах, регулировании и контроле за выполнением задач в области противодействия терроризму. 
+ Правильный ответ: 4
+Ответ модели 5 - Финансовое управление 
+ Правильный ответ: 5
+Ответ модели 26
+
+The text provided appears to be related to the management of electronic documents and the responsibilities of the Federal Tax Service (FTS) in handling such documents. The specific document number mentioned in the text is 26, which corresponds to the "Управление ЭД" (Electronic Document Management) division of the FTS. Therefore, the responsible division for the given text is "26". 
+ Правильный ответ: 15
+Ответ модели [1] get_document_text(doc_number=1) 
+ Правильный ответ: 3
+Ответ модели 28- Управление профессионального развития 
+ Правильный ответ: 12
+Ответ модели 2
+The text is related to tax matters and measures of support for individuals and organizations affected by flooding in the Orenburg region. The Federal Tax Service (ФНС) is mentioned as being responsible for the implementation of these measures, specifically in relation to tax payments and insurance contributions. Given this context, the responsible structural division of the ФНС would be the "Контрольное управление" (Control Department), which has the function number 2. Therefore, the final answer is 2. 
+ Правильный ответ: 11
+Ответ модели [13] # Управление международного налогообложения 
+ Правильный ответ: 17
+Ответ модели 7
+
+The text provided is related to the legal functions and responsibilities of the Federal Tax Service (FTS) of Russia, specifically mentioning the "Legal Department" (Правовое управление) which is responsible for ensuring the proper functioning of tax collection and registration processes, as well as overseeing the activities of financial organizations. The document number corresponding to this department is 7, as indicated in the list of documents and their associated functional areas. Therefore, the responsible division for the given text is the Legal Department, represented by the number 7. 
+ Правильный ответ: 7
+Ответ модели 25.0812171-Уч-2023 (8.1)
+
+На основании анализа текста и функциональных обязанностей подразделений ФНС, можно сделать вывод, что данное письмо относится к Управлению регистрации и учета (номер подразделения - 25). 
+ Правильный ответ: 25
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 2
+Ответ модели 8- Управление задолженности 
+ Правильный ответ: 1
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели [2] 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели [14] Registrar and Accounting Department 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 3- Управление налогообложения ЮЛ 
+ Правильный ответ: 1
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 2
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 3
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 0
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 31
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 17- Управление международного сотрудничества 
+ Правильный ответ: 17
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 404 Client Error: Not Found for url: http://localhost:8022/chat"}
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 7
+Ответ модели [1] # Предполагается, что текст относится к "Административно-контрольному управлению", которое имеет номер 1. 
+ Правильный ответ: 1
+Ответ модели 25
+
+Управление регистрации и учета ФНС России负责处理该函件。 
+ Правильный ответ: 15
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 10. Административно-контрольное управление 
+ Правильный ответ: 0
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 3
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 0
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 7
+Ответ модели 5
+
+The text is related to the preparation of an explanatory note for a federal law project regarding the federal budget for 2025 and the planning period of 2026 and 2027. It mentions the responsibilities of chief administrators of budgetary revenues, responsible executors of state programs, and chief controllers of budgetary funds. The content is focused on financial matters, such as budgetary allocations, revenue projections, and expenditure planning. Given this context, the most relevant department of the Federal Tax Service (FTS) would be the Financial Department, which is responsible for financial matters and budgetary planning. Therefore, the number 5 corresponds to the Financial Department in the list of FTS departments provided. 
+ Правильный ответ: 1
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 00 -Зам. Руководителя 
+ Правильный ответ: 11
+Ответ модели 00 -Зам. Руководителя 
+ Правильный ответ: 3
+Ответ модели 18- Управление банкротства 
+ Правильный ответ: 7
+Ответ модели 1. Аналитическое управление (Управление 1)负责分析和预测财政状况，而文本中提到的“分析（评估）财务状况”和“提出预测方法”的内容与该部门的职能相符。因此，可以初步判断该函件可能由1号部门负责。
+
+最终答案：1 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 17
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 404 Client Error: Not Found for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели []
+
+The provided text is a protocol of an operational meeting with the Minister of Finance of the Russian Federation and does not contain any specific information about a document or its content that would allow me to determine which structural division of the tax service is responsible for it. The text mentions various officials from different agencies but does not specify any particular document or its content. Therefore, I cannot use the `get_document_text` function to retrieve the text of a specific document, as there is no clear indication of which document is being referred to. Additionally, the `list_documents` function would not be helpful in this context because it only provides a list of document IDs and names, without any information about their content or the responsible division. 
+ Правильный ответ: 0
+Ответ модели 19- Управление интерактивных сервисов 
+ Правильный ответ: 3
+Ответ модели [3] # Управление налогообложения ЮЛ 
+ Правильный ответ: 3
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 1
+Ответ модели [1] 1 
+ Правильный ответ: 3
+Ответ модели 7.0.0 
+ Правильный ответ: 7
+Ответ модели 10. Административно-контрольное управление 
+ Правильный ответ: 1
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 11
+Ответ модели 11. Управление налогообложения ФЛ. 
+ Правильный ответ: 1
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 3
+Ответ модели 6.0. Управление информационных технологий. 
+ Правильный ответ: 5
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 17
+Ответ модели 14.0
+
+Управление регистрации и учета является ответственным за письмо, так как оно занимается методологическим обеспечением работы налоговых органов по гosудapственной регистрации юридических лиц, индивидуальных предпринимателей и кpaйcтpанcких хозяйств. 
+ Правильный ответ: 3
+Ответ модели 16- Управление внутреннего аудита 
+ Правильный ответ: 16
+Ответ модели [2] Контрольное управление 
+ Правильный ответ: 3
+Ответ модели 00 -Зам. Руководителя 
+ Правильный ответ: 11
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 1
+Ответ модели 1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+ Правильный ответ: 1
+Ответ модели 26.00 
+ Правильный ответ: 3
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 5
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 25- Управление регистра населения 
+ Правильный ответ: 25
+Ответ модели 5- Финансовое управление 
+ Правильный ответ: 14
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 3
+
+Текст запроса связан с налогообложением юридических лиц, поэтому ответственным за него подразделением ФНС должно быть "3- Управление налогообложения ЮЛ". 
+ Правильный ответ: 11
+Ответ модели 20. Управление оперативного контроля 
+ Правильный ответ: 0
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 0
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 3
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 1
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 1
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 17
+Ответ модели 19-Управление интерактивных сервисов 
+ Правильный ответ: 4
+Ответ модели 31- Управление специальных проектов 
+ Правильный ответ: 31
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 5- Финансовое управление 
+ Правильный ответ: 3
+Ответ модели 7  # The text provided is related to the legal management of tax affairs, which falls under the responsibilities of the Legal Department (7) of the Federal Tax Service. 
+ Правильный ответ: 7
+Ответ модели 31- Управление специальных проектов 
+ Правильный ответ: 3
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 1
+Ответ модели 26- Управление ЭД 
+ Правильный ответ: 4
+Ответ модели 4 - Управление кадров 
+ Правильный ответ: 4
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7
+
+The text provided appears to be related to the functions and responsibilities of the "Правовое управление" (Legal Department) of the Federal Tax Service (ФНС), as it discusses legal oversight, project management, and regulatory compliance. The document number associated with this text is 7, which corresponds to the Legal Department in the list of Federal Tax Service departments. Therefore, the answer is 7. 
+ Правильный ответ: 7
+Ответ модели [20] - Управление оперативного контроля 
+ Правильный ответ: 25
+Ответ модели 1. Аналитическое управление (Управление) является основным структурным подразделением Федеральной налоговой службы. 
+
+Финальный ответ: 1 
+ Правильный ответ: 7
+Ответ модели [31] The text mentions the letters from the FNS Russia with the numbers "ШЮ -17-31/2284@" and "ШЮ-4-31/9190@", which indicates that the responsible department is the "Управление специальных проектов" (Special Projects Department) with the number 31. 
+ Правильный ответ: 31
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 17
+Ответ модели 1.0 # Финальный ответ, указывающий на подразделение ФНС, которое будет ответственным за письмо. 
+ Правильный ответ: 18
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 19.0. Управление интерактивных сервисов Федеральной налоговой службы. 
+ Правильный ответ: 19
+Ответ модели 31.000000000000004 
+ Правильный ответ: 2
+Ответ модели 1483110-Уч-2024 (1.0)
+
+14 
+ Правильный ответ: 3
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели 1.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+ Правильный ответ: 18
+Ответ модели 10.08.2024
+
+1 
+ Правильный ответ: 0
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 0
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 3
+Ответ модели 7.0
+
+Примечание: Ответ в виде цифры подразделения, поскольку функциональные обязанности подразделения 7 (Правового управления) связаны с правовой работой и регулированием, что соответствует содержанию письма о проекте федерального закона. 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 6.0
+
+The given text is related to the management of information and communication technologies in the Federal Tax Service. The functions of the department responsible for this include overseeing the development and implementation of information systems, ensuring the security of information systems, and managing the processing and storage of data. Therefore, the department responsible for the letter is the "Управление информационных технологий" (Information Technology Department), which corresponds to the number 6.0 in the list of departments provided. 
+ Правильный ответ: 14
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 14
+Ответ модели [2] # Контрольное управление 
+ Правильный ответ: 14
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 1
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 7
+Ответ модели [7] # Предполагается, что текст относится к правовым вопросам, поэтому ответственным подразделением будет Правовое управление (номер 7). 
+ Правильный ответ: 5
+Ответ модели 7.0
+
+The given text appears to be related to the management of tax documents and procedures, which aligns with the responsibilities of the "Управление оперативного контроля" (Operational Control Department) of the Federal Tax Service (ФНС). The document mentions various tasks such as controlling the formation and distribution of tax documents, managing the workflow of tax documents, and ensuring the proper functioning of the tax system. These tasks are consistent with the functions of the Operational Control Department, which is responsible for monitoring and controlling the tax collection process, ensuring the accuracy and timeliness of tax reports, and maintaining the overall efficiency of the tax system. Therefore, the most likely department responsible for this letter is the Operational Control Department, which corresponds to the number 7 in the list of departments. 
+ Правильный ответ: 15
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели [2] Контрольное управление 
+ Правильный ответ: 15
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 5. Финансовое управление 
+ Правильный ответ: 18
+Ответ модели 8.000000000000000 
+ Правильный ответ: 5
+Ответ модели {name: 'list_documents', arguments: {}} 
+ Правильный ответ: 11
+Ответ модели 1.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+ Правильный ответ: 1
+Ответ модели 14- Управление регистрации и учета 
+ Правильный ответ: 8
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 3
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 1
+Ответ модели 6.0
+
+Управление информационных технологий (УИТ) отвечает за обеспечение функционирования и защиты автоматизированных систем, в том числе и за обеспечение безопасности информации. В данном случае, УИТ может быть ответственным за письмо, так как оно связано с обеспечением функционирования и защиты автоматизированных систем, а также с вопросами информационной безопасности. 
+ Правильный ответ: 4
+Ответ модели 14 # Управление регистрации и учета 
+ Правильный ответ: 2
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 17
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 0
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 5
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 404 Client Error: Not Found for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 17- Управление международного сотрудничества 
+ Правильный ответ: 15
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 3
+Ответ модели [7] - Правовое управление 
+ Правильный ответ: 7
+Ответ модели 10.09.2024 14:43:28
+
+(подпись) 
+Бажанов В.В.
+
+Проект 
+ПОВЕСТКА 
+З А С Е Д А Н И Я  П Р А В И Т Е Л Ь С Т В А 
+Р О С С И Й С К О Й  Ф Е Д Е Р А Ц И И 
+24 сентября 2024 года 
+(в т о р н и к ) 
+Начало заседания – 13.30 
+(Дом Правительства, 
+5 этаж, Зал заседаний 
+Правительства) 
+
+1. О проекте федерального 
+бюджета на 2025 год и на плановый период 2026 
+и 2027 годов 
+Материал будет разослан 
+
+Докладчик 
+Силуанов 
+Антон Германович 
+- Министр финансов Российской Федерации 
+
+2. О прогнозе социально-экономического развития 
+Российской Федерации на 2025 год и на плановый период 2026 и 2027 годов 
+Материал будет разослан 
+
+Докладчик 
+Решетников 
+Максим Геннадьевич 
+- Министр экономического развития  
+Российской Федерации 
+
+3. О проекте основных направлений единой государственной денежно-кредитной политики на 
+2025 год и период 2026 и 2027 годов 
+Материал № МП-456-м 
+
+(разослан 20.09.2024 г., 
+исх. № 353-П41-28МЗП) 
+
+Докладчик 
+Набиуллина 
+Эльвира Сахипзадовна 
+- Председатель Центрального банка  
+Российской Федерации 
+
+4. О проекте федерального закона «О бюджете 
+Фонда пенсионного и социального страхования 
+Российской Федерации на 2025 год и на плановый 
+период 2026 и 2027 годов» 
+Материал будет разослан 
+
+Докладчик 
+Котяков 
+Антон Олегович 
+- Министр труда и социальной защиты  
+Российской Федерации 
+
+5. О проекте федерального закона «О внесении 
+изменения в статью 1 Федерального закона 
+«О минимальном размере оплаты труда» 
+Материал будет разослан 
+
+Докладчик 
+Котяков 
+Антон Олегович 
+- Министр труда и социальной защиты  
+Российской Федерации 
+
+6. О проекте федерального закона «О страховых 
+тарифах на обязательное социальное страхование от несчастных случаев на производстве и 
+профессиональных заболеваний на 2025 год и на 
+плановый период 2026 и 2027 годов» 
+Материал будет разослан 
+
+Докладчик 
+Котяков 
+Антон Олегович 
+- Министр труда и социальной защиты  
+Российской Федерации 
+
+7. О проекте федерального закона «О бюджете 
+Федерального фонда обязательного медицинского страхования на 2025 год и на плановый 
+период 2026 и 2027 годов» 
+Материал будет разослан 
+
+Докладчик 
+Мурашко 
+Михаил Альбертович 
+- Министр здравоохранения Российской Федерации 
+
+8. О внесении изменения в постановление Правительства Российской Федерации от 19 июня 
+2024 г. № 608 
+(в части внесения изменения в Положение о Министерстве здравоохранения Российской Федерации) 
+Материал будет разослан 
+
+Докладчик 
+Мурашко 
+Михаил Альбертович 
+- Министр здравоохранения Российской Федерации 
+
+9. О проекте федерального закона «О внесении 
+изменений в статью 19 Закона Российской Федерации «О космической деятельности» и статью 7 
+Федерального закона «О Государственной корпорации по космической деятельности «Роскосмос» 
+Материал будет разослан 
+
+Докладчик 
+Борисов 
+Юрий Иванович 
+- генеральный директор Государственной корпорации по космической деятельности «Роскосмос» 
+
+10. О выделении Государственной корпорации по 
+космической деятельности «Роскосмос» 
+в 2024 году из резервного фонда Правительства 
+Российской Федерации бюджетных ассигнований на предоставление федеральному государственному бюджетному учреждению «Научно-исследовательский испытательный центр подготовки космонавтов имени Ю.А.Гагарина» субсидии на приобретение воздушного судна в государственную собственность Российской Федерации 
+Материал № МП-446-м-дсп 
+
+(разослан 20.09.2024 г., 
+исх. № 354-П41-28МЗП) 
+
+Докладчик 
+Борисов 
+Юрий Иванович 
+- генеральный директор Государственной корпорации по космической деятельности «Роскосмос» 
+
+11. О внесении изменений в распоряжение Правительства Российской Федерации от 20 июня 
+2024 г. № 1546-р 
+(в части выделения Минэкономразвития России 
+в 2024 году из резервного фонда Правительства 
+Российской Федерации дополнительных бюджетных ассигнований на предоставление субсидии из федерального бюджета акционерному обществу «РОСНАНО») 
+Материал будет разослан 
+
+Докладчик 
+Силуанов 
+Антон Германович 
+- Министр финансов Российской Федерации 
+
+12. Об определении единственного исполнителя 
+осуществляемых Минфином России в 2024 году 
+закупок услуг по подготовке и проведению 
+встречи глав государств БРИКС 
+Материал будет разослан 
+
+Докладчик 
+Силуанов 
+Антон Германович 
+- Министр финансов Российской Федерации 
+
+13. О проекте федерального закона «О внесении 
+изменений в статьи 5 и 11 Федерального закона 
+«Об аварийно-спасательных службах и статусе 
+спасателей» 
+Материал № МП-457-м 
+
+(разослан 20.09.2024 г., 
+исх. № 353-П41-28МЗП) 
+Материал будет разослан 
+
+Докладчик 
+Яцуценко 
+Виктор Николаевич 
+- заместитель Министра Российской Федерации по 
+делам гражданской обороны, чрезвычайным 
+ситуациям 
+и ликвидации последствий стихийных бедствий 
+
+14. О Правительственной комиссии по вопросам 
+природопользования и охраны окружающей 
+среды, развития лесного комплекса и водного хозяйства 
+Материал будет разослан 
+
+Докладчик 
+Козлов 
+Александр Александрович 
+- Министр природных ресурсов и экологии  
+Российской Федерации 
+
+15. О выделении Минэкономразвития России в 
+2024 году из резервного фонда Правительства 
+Российской Федерации бюджетных ассигнований в целях уплаты налога на недвижимое 
+имущество, расположенное по адресу: г. Москва, 
+Пресненская набережная, д. 10, стр. 2 (Башня 2) 
+Материал будет разослан 
+
+Докладчик 
+Решетников 
+Максим Геннадьевич 
+- Министр экономического развития  
+Российской Федерации 
+
+Указатель рассылки 
+
+Сопроводительное письмо о направлении проекта повестки заседания Правительства № 
+1731434-Уч-2024 от  на 1 л. 
+Приложения (3 л):  
+Повестка заседания на 3 л. 
+
+№ п/п Адресат Кол-во 
+бум. экз. 
+Отправлено 
+электронных 
+копий 
+№ экз. ДСП Приложение 
+1. Администрация Президента 
+Российской Федерации 0 МЭДО  все 
+
+Высшие органы 
+государственной 
+власти Российской 
+Федерации 
+(по списку) 
+
+2. 
+Совет Федерации 
+Федерального Собрания 
+Российской Федерации 
+0 МЭДО  все 
+3. 
+Государственная Дума 
+Федерального Собрания 
+Российской Федерации 
+0 МЭДО  все 
+4. Генеральная прокуратура 
+Российской Федерации 0 МЭДО  все 
+5. Счетная палата Российской 
+Федерации 0 МЭДО  все 
+
+Федеральные органы 
+исполнительной власти, 
+иные органы и 
+организации 
+(по списку) 
+
+6. МВД России 0 МЭДО  все 
+7. МЧС России 0 МЭДО  все 
+8. МИД России 0 МЭДО  все 
+9. Минобороны России 0 МЭДО  все 
+10. Минюст России 0 МЭДО  все 
+11. Минздрав России 0 МЭДО  все 
+12. Минкультуры России 0 МЭДО  все  
+
+13. Минобрнауки России 0 МЭДО  все 
+14. Минприроды России 0 МЭДО  все 
+15. Минпромторг России 0 МЭДО  все 
+16. Минпросвещения России 0 МЭДО  все 
+17. Минвостокразвития России 0 МЭДО  все 
+18. Минсельхоз России 0 МЭДО  все 
+19. Минспорт России 0 МЭДО  все 
+20. Минстрой России 0 МЭДО  все 
+21. Минтранс России 0 МЭДО  все 
+22. Минтруд России 0 МЭДО  все 
+23. Минфин России 0 МЭДО  все 
+24. Минцифры России 0 МЭДО  все 
+25. Минэкономразвития России 0 МЭДО  все 
+26. Минэнерго России 0 МЭДО  все 
+27. ФАС России 0 МЭДО  все 
+28. Банк России 0 МЭДО  все 
+29. Российская академия наук 0 МЭДО  все 
+30. Шохин Александр 
+Николаевич - РСПП 0 МЭДО  все 
+31. 
+Шмаков Михаил Викторович 
+- Общероссийский союз 
+"Федерация Независимых 
+Профсоюзов России" 
+0 МЭДО  все 
+32. Борисов Юрий Иванович - 
+Госкорпорация "Роскосмос" 0 МЭДО  все 
+
+Всего направлено 
+экземпляров, в том числе: 0 32   
+по адресам 0 32   
+по АП РФ  0
+
+Из текста видно, что письмо направлено в Администрацию Президента Российской Федерации и другие высшие органы государственной власти. Подразделение ФНС, которое может быть ответственным за такое письмо, это "00 - Зам. Руководителя". 
+
+Ответ: 00. 
+ Правильный ответ: 0
+Ответ модели 26- Управление ЭД 
+ Правильный ответ: 3
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 8
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 17
+Ответ модели 7
+
+Текст относится к правовому управлению (подразделение 7), так как содержит информацию о правовой работе, проектах нормативных правовых актов и их согласовании. 
+ Правильный ответ: 8
+Ответ модели [2] # Контрольное управление 
+ Правильный ответ: 8
+Ответ модели 10- Административно-контрольное управление 
+ Правильный ответ: 20
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 1
+Ответ модели 14
+
+Управление регистрации и учета ФНС будет ответственным за письмо, так как его функциональные обязанности включают работу с налоговыми личностями и организациями, а также контроль за их деятельностью. 
+ Правильный ответ: 14
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 0
+Ответ модели 1. Аналитическое управление (Управление) явл. самостоятельным структурным подразделением ФНС (службы). 
+
+2. Осн. задачи Управления:
+
+2.1. Координация деятельности службы по формированию и выработке налоговой политики.
+
+2.2. Обеспечение взаимодействия службы с другими ведомствами.
+
+2.3. Разработка и внедрение методов аналитической работы.
+
+2.4. Подготовка и представление информации о деятельности службы.
+
+2.5. Внедрение системы аналитики для принятия упр. решений.
+
+2.6. Координация работы службы по обеспечению налогового административного производства.
+
+2.7. Подготовка и представление информации о работе службы по налоговому административному производству.
+
+2.8. Подготовка и представление информации о работе службы по налоговому административному производству.
+
+2.9. Ведение базы данных о деятельности службы.
+
+2.10. Обеспечение работы с документами, входящими в компетенцию Управления.
+
+2.11. Представление информации о деятельности службы.
+
+2.12. Обеспечение работы с документами, входящими в компетенцию Управления.
+
+2.13. Анализ и подготовка предложений по совершенствованию налогового административного производства.
+
+2.14. Внедрение системы аналитики для принятия упр. решений.
+
+2.15. Обеспечение работы с документами, входящими в компетенцию Управления.
+
+2.16. Подготовка и представление информации о работе службы.
+
+2.17. Обеспечение работы с документами, входящими в компетенцию Управления.
+
+2.18. Внедрение системы аналитики для принятия упр. решений.
+
+2.19. Внедрение системы аналитики для принятия упр. решений.
+
+2.20. Внедрение системы аналитики для принятия упр. решений.
+
+2.21. Внедрение системы аналитики для принятия упр. решений.
+
+2.22. Внедрение системы аналитики для принятия упр. решений.
+
+2.23. Внедрение системы аналитики для принятия упр. решений.
+
+2.24. Внедрение системы аналитики для принятия упр. решений.
+
+2.25. Внедрение системы аналитики для принятия упр. решений.
+
+2.26. Внедрение системы аналитики для принятия упр. решений.
+
+2.27. Внедрение системы аналитики для принятия упр. решений.
+
+2.28. Внедрение системы аналитики для принятия упр. решений.
+
+2.29. Внедрение системы аналитики для принятия упр. решений.
+
+2.30. Внедрение системы аналитики для принятия упр. решений.
+
+2.31. Внедрение системы аналитики для принятия упр. решений.
+
+2.32. Внедрение системы аналитики для принятия упр. решений.
+
+2.33. Внедрение системы аналитики для принятия упр. решений.
+
+2.34. Внедрение системы аналитики для принятия упр. решений.
+
+2.35. Внедрение системы аналитики для принятия упр. решений.
+
+2.36. Внедрение системы аналитики для принятия упр. решений.
+
+2.37. Внедрение системы аналитики для принятия упр. решений.
+
+2.38. Внедрение системы аналитики для принятия упр. решений.
+
+2.39. Внедрение системы аналитики для принятия упр. решений.
+
+2.40. Внедрение системы аналитики для принятия упр. решений.
+
+2.41. Внедрение системы аналитики для принятия упр. решений.
+
+2.42. Внедрение системы аналитики для принятия упр. решений.
+
+2.43. Внедрение системы аналитики для принятия упр. решений.
+
+2.44. Внедрение системы аналитики для принятия упр. решений.
+
+2.45. Внедрение системы аналитики для принятия упр. решений.
+
+2.46. Внедрение системы аналитики для принятия упр. решений.
+
+2.47. Внедрение системы аналитики для принятия упр. решений.
+
+2.48. Внедрение системы аналитики для принятия упр. решений.
+
+2.49. Внедрение системы аналитики для принятия упр. решений.
+
+2.50. Внедрение системы аналитики для принятия упр. решений.
+
+2.51. Внедрение системы аналитики для принятия упр. решений.
+
+2.52. Внедрение системы аналитики для принятия упр. решений.
+
+2.53. Внедрение системы аналитики для принятия упр. решений.
+
+2.54. Внедрение системы аналитики для принятия упр. решений.
+
+2.55. Внедрение системы аналитики для принятия упр. решений.
+
+2.56. Внедрение системы аналитики для принятия упр. решений.
+
+2.57. Внедрение системы аналитики для принятия упр. решений.
+
+2.58. Внедрение системы аналитики для принятия упр. решений.
+
+2.59. Внедрение системы аналитики для принятия упр. решений.
+
+2.60. Внедрение системы аналитики для принятия упр. решений.
+
+2.61. Внедрение системы аналитики для принятия упр. решений.
+
+2.62. Внедрение системы аналитики для принятия упр. решений.
+
+2.63. Внедрение системы аналитики для принятия упр. решений.
+
+2.64. Внедрение системы аналитики для принятия упр. решений.
+
+2.65. Внедрение системы аналитики для принятия упр. решений.
+
+2.66. Внедрение системы аналитики для принятия упр. решений.
+
+2.67. Внедрение системы аналитики для принятия упр. решений.
+
+2.68. Внедрение системы аналитики для принятия упр. решений.
+
+2.69. Внедрение системы аналитики для принятия упр. решений.
+
+2.70. Внедрение системы аналитики для принятия упр. решений.
+
+2.71. Внедрение системы аналитики для принятия упр. решений.
+
+2.72. Внедрение системы аналитики для принятия упр. решений.
+
+2.73. Внедрение системы аналитики для принятия упр. решений.
+
+2.74. Внедрение системы аналитики для принятия упр. решений.
+
+2.75. Внедрение системы аналитики для принятия упр. решений.
+
+2.76. Внедрение системы аналитики для принятия упр. решений.
+
+2.77. Внедрение системы аналитики для принятия упр. решений.
+
+2.78. Внедрение системы аналитики для принятия упр. решений.
+
+2.79. Внедрение системы аналитики для принятия упр. решений.
+
+2.80. Внедрение системы аналитики для принятия упр. решений.
+
+2.81. Внедрение системы аналитики для принятия упр. решений.
+
+2.82. Внедрение системы аналитики для принятия упр. решений.
+
+2.83. Внедрение системы аналитики для принятия упр. решений.
+
+2.84. Внедрение системы аналитики для принятия упр. решений.
+
+2.85. Внедрение системы аналитики для принятия упр. решений.
+
+2.86. Внедрение системы аналитики для принятия упр. решений.
+
+2.87. Внедрение системы аналитики для принятия упр. решений.
+
+2.88. Внедрение системы аналитики для принятия упр. решений.
+
+2.89. Внедрение системы аналитики для принятия упр. решений.
+
+2.90. Внедрение системы аналитики для принятия упр. решений.
+
+2.91. Внедрение системы аналитики для принятия упр. решений.
+
+2.92. Внедрение системы аналитики для принятия упр. решений.
+
+2.93. Внедрение системы аналитики для принятия упр. решений.
+
+2.94. Внедрение системы аналитики для принятия упр. решений.
+
+2.95. Внедрение системы аналитики для принятия упр. решений.
+
+2.96. Внедрение системы аналитики для принятия упр. решений.
+
+2.97. Внедрение системы аналитики для принятия упр. решений.
+
+2.98. Внедрение системы аналитики для принятия упр. решений.
+
+2.99. Внедрение системы аналитики для принятия упр. решений.
+
+2.100. Внедрение системы аналитики для принятия упр. решений.
+
+2.101. Внедрение системы аналитики для принятия упр. решений.
+
+2.102. Внедрение системы аналитики для принятия упр. решений.
+
+2.103. Внедрение системы аналитики для принятия упр. решений.
+
+2.104. Внедрение системы аналитики для принятия упр. решений.
+
+2.105. Внедрение системы аналитики для принятия упр. решений.
+
+2.106. Внедрение системы аналитики для принятия упр. решений.
+
+2.107. Внедрение системы аналитики для принятия упр. решений.
+
+2.108. Внедрение системы аналитики для принятия упр. решений.
+
+2.109. Внедрение системы аналитики для принятия упр. решений.
+
+2.110. Внедрение системы аналитики для принятия упр. решений.
+
+2.111. Внедрение системы аналитики для принятия упр. решений.
+
+2.112. Внедрение системы аналитики для принятия упр. решений.
+
+2.113. Внедрение системы аналитики для принятия упр. решений.
+
+2.114. Внедрение системы аналитики для принятия упр. решений.
+
+2.115. Внедрение системы аналитики для принятия упр. решений.
+
+2.116. Внедрение системы аналитики для принятия упр. решений.
+
+2.117. Внедрение системы аналитики для принятия упр. решений.
+
+2.118. Внедрение системы аналитики для принятия упр. решений.
+
+2.119. Внедрение системы аналитики для принятия упр. решений.
+
+2.120. Внедрение системы аналитики для принятия упр. решений.
+
+2.121. Внедрение системы аналитики для принятия упр. решений.
+
+2.122. Внедрение системы аналитики для принятия упр. решений.
+
+2.123. Внедрение системы аналитики для принятия упр. решений.
+
+2.124. Внедрение системы аналитики для принятия упр. решений.
+
+2.125. Внедрение системы аналитики для принятия упр. решений.
+
+2.126. Внедрение системы аналитики для принятия упр. решений.
+
+2.127. Внедрение системы аналитики для принятия упр. решений.
+
+2.128. Внедрение системы аналитики для принятия упр. решений.
+
+2.129. Внедрение системы аналитики для принятия упр. решений.
+
+2.130. Внедрение системы аналитики для принятия упр. решений.
+
+2.131. Внедрение системы аналитики для принятия упр. решений.
+
+2.132. Внедрение системы аналитики для принятия упр. решений.
+
+2.133. Внедрение системы аналитики для принятия упр. решений.
+
+2.134. Внедрение системы аналитики для принятия упр. решений.
+
+2.135. Внедрение системы аналитики для принятия упр. решений.
+
+2.136. Внедрение системы аналитики для принятия упр. решений.
+
+2.137. Внедрение системы аналитики для принятия упр. решений.
+
+2.138. Внедрение системы аналитики для принятия упр. решений.
+
+2.139. Внедрение системы аналитики для принятия упр. решений.
+
+2.140. Внедрение системы аналитики для принятия упр. решений.
+
+2.141. Внедрение системы аналитики для принятия упр. решений.
+
+2.142. Внедрение системы аналитики для принятия упр. решений.
+
+2.143. Внедрение системы аналитики для принятия упр. решений.
+
+2.144. Внедрение системы аналитики для принятия упр. решений.
+
+2.145. Внедрение системы аналитики для принятия упр. решений.
+
+2.146. Внедрение системы аналитики для принятия упр. решений.
+
+2.147. Внедрение системы аналитики для принятия упр. решений.
+
+2.148. Внедрение системы аналитики для принятия упр. решений.
+
+2.149. Внедрение системы аналитики для принятия упр. решений.
+
+2.150. Внедрение системы аналитики для принятия упр. решений.
+
+2.151. Внедрение системы аналитики для принятия упр. решений.
+
+2.152. Внедрение системы аналитики для принятия упр. решений.
+
+2.153. Внедрение системы аналитики для принятия упр. решений.
+
+2.154. Внедрение системы аналитики для принятия упр. решений.
+
+2.155. Внедрение системы аналитики для принятия упр. решений.
+
+2.156. Внедрение системы аналитики для принятия упр. решений.
+
+2.157. Внедрение системы аналитики для принятия упр. решений.
+
+2.158. Внедрение системы аналитики для принятия упр. решений.
+
+2.159. Внедрение системы аналитики для принятия упр. решений.
+
+2.160. Внедрение системы аналитики для принятия упр. решений.
+
+2.161. Внедрение системы аналитики для принятия упр. решений.
+
+2.162. Внедрение системы аналитики для принятия упр. решений.
+
+2.163. Внедрение системы аналитики для принятия упр. решений.
+
+2.164. Внедрение системы аналитики для принятия упр. решений.
+
+2.165. Внедрение системы аналитики для принятия упр. решений.
+
+2.166. Внедрение системы аналитики для принятия упр. решений.
+
+2.167. Внедрение системы аналитики для принятия упр. решений.
+
+2.168. Внедрение системы аналитики для принятия упр. решений.
+
+2.169. Внедрение системы аналитики для принятия упр. решений.
+
+2.170. Внедрение системы аналитики для принятия упр. решений.
+
+2.171. Внедрение системы аналитики для принятия упр. решений.
+
+2.172. Внедрение системы аналитики для принятия упр. решений.
+
+2.173. Внедрение системы аналитики для принятия упр. решений.
+
+2.174. Внедрение системы аналитики для принятия упр. решений.
+
+2.175. Внедрение системы аналитики для принятия упр. решений.
+
+2.176. Внедрение системы аналитики для принятия упр. решений.
+
+2.177. Внедрение системы аналитики для принятия упр. решений.
+
+2.178. Внедрение системы аналитики для принятия упр. решений.
+
+2.179. Внедрение системы аналитики для принятия упр. решений.
+
+2.180. Внедрение системы аналитики для принятия упр. решений.
+
+2.181. Внедрение системы аналитики для принятия упр. решений.
+
+2.182. Внедрение системы аналитики для принятия упр. решений.
+
+2.183. Внедрение системы аналитики для принятия упр. решений.
+
+2.184. Внедрение системы аналитики для принятия упр. решений.
+
+2.185. Внедрение системы аналитики для принятия упр. решений.
+
+2.186. Внедрение системы аналитики для принятия упр. решений.
+
+2.187. Внедрение системы аналитики для принятия упр. решений.
+
+2.188. Внедрение системы аналитики для принятия упр. решений.
+
+2.189. Внедрение системы аналитики для принятия упр. решений.
+
+2.190. Внедрение системы аналитики для принятия упр. решений.
+
+2.191. Внедрение системы аналитики для принятия упр. решений.
+
+2.192. Внедрение системы аналитики для принятия упр. решений.
+
+2.193. Внедрение системы аналитики для принятия упр. решений.
+
+2.194. Внедрение системы аналитики для принятия упр. решений.
+
+2.195. Внедрение системы аналитики для принятия упр. решений.
+
+2.196. Внедрение системы аналитики для принятия упр. решений.
+
+2.197. Внедрение системы аналитики для принятия упр. решений.
+
+2.198. Внедрение системы аналитики для принятия упр. решений.
+
+2.199. Внедрение системы аналитики для принятия упр. решений.
+
+2.200. Внедрение системы аналитики для принятия упр. решений.
+
+2.201. Внедрение системы аналитики для принятия упр. решений.
+
+2.202. Внедрение системы аналитики для принятия упр. решений.
+
+2.203. Внедрение системы аналитики для принятия упр. решений.
+
+2.204. Внедрение системы аналитики для принятия упр. решений.
+
+2.205. Внедрение системы аналитики для принятия упр. решений.
+
+2.206. Внедрение системы аналитики для принятия упр. решений.
+
+2.207. Внедрение системы аналитики для принятия упр. решений.
+
+2.208. Внедрение системы аналитики для принятия упр. решений.
+
+2.209. Внедрение системы аналитики для принятия упр. решений.
+
+2.210. Внедрение системы аналитики для принятия упр. решений.
+
+2.211. Внедрение системы аналитики для принятия упр. решений.
+
+2.212. Внедрение системы аналитики для принятия упр. решений.
+
+2.213. Внедрение системы аналитики для принятия упр. решений.
+
+2.214. Внедрение системы аналитики для принятия упр. решений.
+
+2.215. Внедрение системы аналитики для принятия упр. решений.
+
+2.216. Внедрение системы аналитики для принятия упр. решений.
+
+2.217. Внедрение системы аналитики для принятия упр. решений.
+
+2.218. Внедрение системы аналитики для принятия упр. решений.
+
+2.219. Внедрение системы аналитики для принятия упр. решений.
+
+2.220. Внедрение системы аналитики для принятия упр. решений.
+
+2.221. Внедрение системы аналитики для принятия упр. решений.
+
+2.222. Внедрение системы аналитики для принятия упр. решений.
+
+2.223. Внедрение системы аналитики для принятия упр. решений.
+
+2.224. Внедрение системы аналитики для принятия упр. решений.
+
+2.225. Внедрение системы аналитики для принятия упр. решений.
+
+2.226. Внедрение системы аналитики для принятия упр. решений.
+
+2.227. Внедрение системы аналитики для принятия упр. решений.
+
+2.228. Внедрение системы аналитики для принятия упр. решений.
+
+2.229. Внедрение системы аналитики для принятия упр. решений.
+
+2.230. Внедрение системы аналитики для принятия упр. решений.
+
+2.231. Внедрение системы аналитики для принятия упр. решений.
+
+2.232. Внедрение системы аналитики для принятия упр. решений.
+
+2.233. Внедрение системы аналитики для принятия упр. решений.
+
+2.234. Внедрение системы аналитики для принятия упр. решений.
+
+2.235. Внедрение системы аналитики для принятия упр. решений.
+
+2.236. Внедрение системы аналитики для принятия упр. решений.
+
+2.237. Внедрение системы аналитики для принятия упр. решений.
+
+2.238. Внедрение системы аналитики для принятия упр. решений.
+
+2.239. Внедрение системы аналитики для принятия упр. решений.
+
+2.240. Внедрение системы аналитики для принятия упр. решений.
+
+2.241. Внедрение системы аналитики для принятия упр. решений.
+
+2.242. Внедрение системы аналитики для принятия упр. решений.
+
+2.243. Внедрение системы аналитики для принятия упр. решений.
+
+2.244. Внедрение системы аналитики для принятия упр. решений.
+
+2.245. Внедрение системы аналитики для принятия упр. решений.
+
+2.246. Внедрение системы аналитики для принятия упр. решений.
+
+2.247. Внедрение системы аналитики для принятия упр. решений.
+
+2.248. Внедрение системы аналитики для принятия упр. решений.
+
+2.249. Внедрение системы аналитики для принятия упр. решений.
+
+2.250. Внедрение системы аналитики для принятия упр. решений.
+
+2.251. Внедрение системы аналитики для принятия упр. решений.
+
+2.252. Внедрение системы аналитики для принятия упр. решений.
+
+2.253. Внедрение системы аналитики для принятия упр. решений.
+
+2.254. Внедрение системы аналитики для принятия упр. решений.
+
+2.255. Внедрение системы аналитики для принятия упр. решений.
+
+2.256. Внедрение системы аналитики для принятия упр. решений.
+
+2.257. Внедрение системы аналитики для принятия упр. решений.
+
+2.258. Внедрение системы аналитики для принятия упр. решений.
+
+2.259. Внедрение системы аналитики для принятия упр. решений.
+
+2.260. Внедрение системы аналитики для принятия упр. решений.
+
+2.261. Внедрение системы аналитики для принятия упр. решений.
+
+2.262. Внедрение системы аналитики для принятия упр. решений.
+
+2.263. Внедрение системы аналитики для принятия упр. решений.
+
+2.264. Внедрение системы аналитики для принятия упр. решений.
+
+2.265. Внедрение системы аналитики для принятия упр. решений.
+
+2.266. Внедрение системы аналитики для принятия упр. решений.
+
+2.267. Внедрение системы аналитики для принятия упр. решений.
+
+2.268. Внедрение системы аналитики для принятия упр. решений.
+
+2.269. Внедрение системы аналитики для принятия упр. решений.
+
+2.270. Внедрение системы аналитики для принятия упр. решений.
+
+2.271. Внедрение системы аналитики для принятия упр. решений.
+
+2.272. Внедрение системы аналитики для принятия упр. решений.
+
+2.273. Внедрение системы аналитики для принятия упр. решений.
+
+2.274. Внедрение системы аналитики для принятия упр. решений.
+
+2.275. Внедрение системы аналитики для принятия упр. решений.
+
+2.276. Внедрение системы аналитики для принятия упр. решений.
+
+2.277. Внедрение системы аналитики для принятия упр. решений.
+
+2.278. Внедрение системы аналитики для принятия упр. решений.
+
+2.279. Внедрение системы аналитики для принятия упр. решений.
+
+2.280. Внедрение системы аналитики для принятия упр. решений.
+
+2.281. Внедрение системы аналитики для принятия упр. решений.
+
+2.282. Внедрение системы аналитики для принятия упр. решений.
+
+2.283. Внедрение системы аналитики для принятия упр. решений.
+
+2.284. Внедрение системы аналитики для принятия упр. решений.
+
+2.285. Внедрение системы аналитики для принятия упр. решений.
+
+2.286. Внедрение системы аналитики для принятия упр. решений.
+
+2.287. Внедрение системы аналитики для принятия упр. решений.
+
+2.288. Внедрение системы аналитики для принятия упр. решений.
+
+2.289. Внедрение системы аналитики для принятия упр. решений.
+
+2.290. Внедрение системы аналитики для принятия упр. решений.
+
+2.291. Внедрение системы аналитики для принятия упр. решений.
+
+2.292. Внедрение системы аналитики для принятия упр. решений.
+
+2.293. Внедрение системы аналитики для принятия упр. решений.
+
+2.294. Внедрение системы аналитики для принятия упр. решений.
+
+2.295. Внедрение системы аналитики для принятия упр. решений.
+
+2.296. Внедрение системы аналитики для принятия упр. решений.
+
+2.297. Внедрение системы аналитики для принятия упр. решений.
+
+2.298. Внедрение системы аналитики для принятия упр. решений.
+
+2.299. Внедрение системы аналитики для принятия упр. решений.
+
+2.300. Внедрение системы аналитики для принятия упр. решений.
+
+2.301. Внедрение системы аналитики для принятия упр. решений.
+
+2.302. Внедрение системы аналитики для принятия упр. решений.
+
+2.303. Внедрение системы аналитики для принятия упр. решений.
+
+2.304. Внедрение системы аналитики для принятия упр. решений.
+
+2.305. Внедрение системы аналитики для принятия упр. решений.
+
+2.306. Внедрение системы аналитики для принятия упр. решений.
+
+2.307. Внедрение системы аналитики для принятия упр. решений.
+
+2.308. Внедрение системы аналитики для принятия упр. решений.
+
+2.309. Внедрение системы аналитики для принятия упр. решений.
+
+2.310. Внедрение системы аналитики для принятия упр. решений.
+
+2.311. Внедрение системы аналитики для принятия упр. решений.
+
+2.312. Внедрение системы аналитики для принятия упр. решений.
+
+2.313. Внедрение системы аналитики для принятия упр. решений.
+
+2.314. Внедрение системы аналитики для принятия упр. решений.
+
+2.315. Внедрение системы аналитики для принятия упр. решений.
+
+2.316. Внедрение системы аналитики для принятия упр. решений.
+
+2.317. Внедрение системы аналитики для принятия упр. решений.
+
+2.318. Внедрение системы аналитики для принятия упр. решений.
+
+2.319. Внедрение системы аналитики для принятия упр. решений.
+
+2.320. Внедрение системы аналитики для принятия упр. решений.
+
+2.321. Внедрение системы аналитики для принятия упр. решений.
+
+2.322. Внедрение системы аналитики для принятия упр. решений.
+
+2.323. Внедрение системы аналитики для принятия упр. решений.
+
+2.324. Внедрение системы аналитики для принятия упр. решений.
+
+2.325. Внедрение системы аналитики для принятия упр. решений.
+
+2.326. Внедрение системы аналитики для принятия упр. решений.
+
+2.327. Внедрение системы аналитики для принятия упр. решений.
+
+2.328. Внедрение системы аналитики для принятия упр. решений.
+
+2.329. Внедрение системы аналитики для принятия упр. решений.
+
+2.330. Внедрение системы аналитики для принятия упр. решений.
+
+2.331. Внедрение системы аналитики для принятия упр. решений.
+
+2.332. Внедрение системы аналитики для принятия упр. решений.
+
+2.333. Внедрение системы аналитики для принятия упр. решений.
+
+2.334. Внедрение системы аналитики для принятия упр. решений.
+
+2.335. Внедрение системы аналитики для принятия упр. решений.
+
+2.336. Внедрение системы аналитики для принятия упр. решений.
+
+2.337. Внедрение системы аналитики для принятия упр. решений.
+
+2.338. Внедрение системы аналитики для принятия упр. решений.
+
+2.339. Внедрение системы аналитики для принятия упр. решений.
+
+2.340. Внедрение системы аналитики для принятия упр. решений.
+
+2.341. Внедрение системы аналитики для принятия упр. решений.
+
+2.342. Внедрение системы аналитики для принятия упр. решений.
+
+2.343. Внедрение системы аналитики для принятия упр. решений.
+
+2.344. Внедрение системы аналитики для принятия упр. решений.
+
+2.345. Внедрение системы аналитики для принятия упр. решений.
+
+2.346. Внедрение системы аналитики для принятия упр. решений.
+
+2.347. Внедрение системы аналитики для принятия упр. решений.
+
+2.348. Внедрение системы аналитики для принятия упр. решений.
+
+2.349. Внедрение системы аналитики для принятия упр. решений.
+
+2.350. Внедрение системы аналитики для принятия упр. решений.
+
+2.351. Внедрение системы аналитики для принятия упр. решений.
+
+2.352. Внедрение системы аналитики для принятия упр. решений.
+
+2.353. Внедрение системы аналитики для принятия упр. решений.
+
+2.354. Внедрение системы аналитики для принятия упр. решений.
+
+2.355. Внедрение системы аналитики для принятия упр. решений.
+
+2.356. Внедрение системы аналитики для принятия упр. решений.
+
+2.357. Внедрение системы аналитики для принятия упр. решений.
+
+2.358. Внедрение системы аналитики для принятия упр. решений.
+
+2.359. Внедрение системы аналитики для принятия упр. решений.
+
+2.360. Внедрение системы аналитики для принятия упр. решений.
+
+2.361. Внедрение системы аналитики для принятия упр. решений.
+
+2.362. Внедрение системы аналитики для принятия упр. решений.
+
+2.363. Внедрение системы аналитики для принятия упр. решений.
+
+2.364. Внедрение системы аналитики для принятия упр. решений.
+
+2.365. Внедрение системы аналитики для принятия упр. решений.
+
+2.366. Внедрение системы аналитики для принятия упр. решений.
+
+2.367. Внедрение системы аналитики для принятия упр. решений.
+
+2.368. Внедрение системы аналитики для принятия упр. решений.
+
+2.369. Внедрение системы аналитики для принятия упр. решений.
+
+2.370. Внедрение системы аналитики для принятия упр. решений.
+
+2.371. Внедрение системы аналитики для принятия упр. решений.
+
+2.372. Внедрение системы аналитики для принятия упр. решений.
+
+2.373. Внедрение системы аналитики для принятия упр. решений.
+
+2.374. Внедрение системы аналитики для принятия упр. решений.
+
+2.375. Внедрение системы аналитики для принятия упр. решений.
+
+2.376. Внедрение системы аналитики для принятия упр. решений.
+
+2.377. Внедрение системы аналитики для принятия упр. решений.
+
+2.378. Внедрение системы аналитики для принятия упр. решений.
+
+2.379. Внедрение системы аналитики для принятия упр. решений.
+
+2.380. Внедрение системы аналитики для принятия упр. решений.
+
+2.381. Внедрение системы аналитики для принятия упр. решений.
+
+2.382. Внедрение системы аналитики для принятия упр. решений.
+
+2.383. Внедрение системы аналитики для принятия упр. решений.
+
+2.384. Внедрение системы аналитики для принятия упр. решений.
+
+2.385. Внедрение системы аналитики для принятия упр. решений.
+
+2.386. Внедрение системы аналитики для принятия упр. решений.
+
+2.387. Внедрение системы аналитики для принятия упр. решений.
+
+2.388. Внедрение системы аналитики для принятия упр. решений.
+
+2.389. Внедрение системы аналитики для принятия упр. решений.
+
+2.390. Внедрение системы аналитики для принятия упр. решений.
+
+2.391. Внедрение системы аналитики для принятия упр. решений.
+
+2.392. Внедрение системы аналитики для принятия упр. решений.
+
+2.393. Внедрение системы аналитики для принятия упр. решений.
+
+2.394. Внедрение системы аналитики для принятия упр. решений.
+
+2.395. Внедрение системы аналитики для принятия упр. решений.
+
+2.396. Внедрение системы аналитики для принятия упр. решений.
+
+2.397. Внедрение системы аналитики для принятия упр. решений.
+
+2.398. Внедрение системы аналитики для принятия упр. решений.
+
+2.399. Внедрение системы аналитики для принятия упр. решений.
+
+2.400. Внедрение системы аналитики для принятия упр. решений.
+
+2.401. Внедрение системы аналитики для принятия упр. решений.
+
+2.402. Внедрение системы аналитики для принятия упр. решений.
+
+2.403. Внедрение системы аналитики для принятия упр. решений.
+
+2.404. Внедрение системы аналитики для принятия упр. решений.
+
+2.405. Внедрение системы аналитики для принятия упр. решений.
+
+2.406. Внедрение системы аналитики для принятия упр. решений.
+
+2.407. Внедрение системы аналитики для принятия упр. решений.
+
+2.408. Внедрение системы аналитики для принятия упр. решений.
+
+2.409. Внедрение системы аналитики для принятия упр. решений.
+
+2.410. Внедрение системы аналитики для принятия упр. решений.
+
+2.411. Внедрение системы аналитики для принятия упр. решений.
+
+2.412. Внедрение системы аналитики для принятия упр. решений.
+
+2.413. Внедрение системы аналитики для принятия упр. решений.
+
+2.414. Внедрение системы аналитики для принятия упр. решений.
+
+2.415. Внедрение системы аналитики для принятия упр. решений.
+
+2.416. Внедрение системы аналитики для принятия упр. решений.
+
+2.417. Внедрение системы аналитики для принятия упр. решений.
+
+2.418. Внедрение системы аналитики для принятия упр. решений.
+
+2.419. Внедрение системы аналитики для принятия упр. решений.
+
+2.420. Внедрение системы аналитики для принятия упр. решений.
+
+2.421. Внедрение системы аналитики для принятия упр. решений.
+
+2.422. Внедрение системы аналитики для принятия упр. решений.
+
+2.423. Внедрение системы аналитики для принятия упр. решений.
+
+2.424. Внедрение системы аналитики для принятия упр. решений.
+
+2.425. Внедрение системы аналитики для принятия упр. решений.
+
+2.426. Внедрение системы аналитики для принятия упр. решений.
+
+2.427. Внедрение системы аналитики для принятия упр. решений.
+
+2.428. Внедрение системы аналитики для принятия упр. решений.
+
+2.429. Внедрение системы аналитики для принятия упр. решений.
+
+2.430. Внедрение системы аналитики для принятия упр. решений.
+
+2.431. Внедрение системы аналитики для принятия упр. решений.
+
+2.432. Внедрение системы аналитики для принятия упр. решений.
+
+2.433. Внедрение системы аналитики для принятия упр. решений.
+
+2.434. Внедрение системы аналитики для принятия упр. решений.
+
+2.435. Внедрение системы аналитики для принятия упр. решений.
+
+2.436. Внедрение системы аналитики для принятия упр. решений.
+
+2.437. Внедрение системы аналитики для принятия упр. решений.
+
+2.438. Внедрение системы аналитики для принятия упр. решений.
+
+2.439. Внедрение системы аналитики для принятия упр. решений.
+
+2.440. Внедрение системы аналитики для принятия упр. решений.
+
+2.441. Внедрение системы аналитики для принятия упр. решений.
+
+2.442. Внедрение системы аналитики для принятия упр. решений.
+
+2.443. Внедрение системы аналитики для принятия упр. решений.
+
+2.444. Внедрение системы аналитики для принятия упр. решений.
+
+2.445. Внедрение системы аналитики для принятия упр. решений.
+
+2.446. Внедрение системы аналитики для принятия упр. решений.
+
+2.447. Внедрение системы аналитики для принятия упр. решений.
+
+2.448. Внедрение системы аналитики для принятия упр. решений.
+
+2.449. Внедрение системы аналитики для принятия упр. решений.
+
+2.450. Внедрение системы аналитики для принятия упр. решений.
+
+2.451. Внедрение системы аналитики для принятия упр. решений.
+
+2.452. Внедрение системы аналитики для принятия упр. решений.
+
+2.453. Внедрение системы аналитики для принятия упр. решений.
+
+2.454. 
+ Правильный ответ: 1
+Ответ модели 1. Письмо касается мониторинга исполнения консолидированных бюджетов субъектов Российской Федерации и запроса информации о прогнозируемом поступлении налоговых доходов.
+2. Подразделение, которое занимается мониторингом исполнения консолидированных бюджетов и контролем за поступлением налоговых доходов, это Управление финансового контроля (УФК).
+3. УФК соответствует номеру документа 5.
+
+Финальный ответ: 5 
+ Правильный ответ: 1
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 14
+Ответ модели [2]  # Контрольное управление 
+ Правильный ответ: 7
+Ответ модели 7
+
+The text provided is related to the legal affairs of the tax service, and it mentions the "Правовое управление" (Legal Department) of the Federal Tax Service. The document number associated with this department is 7, which corresponds to the function call `get_document_text` with the argument `doc_number: 7`. Therefore, the responsible division for the letter is the Legal Department, represented by the number 7. 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели [7] Правовое управление 
+ Правильный ответ: 7
+Ответ модели 25.0
+
+The given text is related to the registration and accounting of the Federal Tax Service (FTS) and mentions the responsibilities of the FTS in handling various documents and data. The document number mentioned in the text is 25, which corresponds to the "Управление регистрации и учета" (Registration and Accounting Department) of the FTS. Therefore, the final answer is 25.0, indicating that the Registration and Accounting Department is responsible for the letter. 
+ Правильный ответ: 3
+Ответ модели 5-Финансовое управление 
+ Правильный ответ: 1
+Ответ модели [00] # Зам. Руководителя 
+ Правильный ответ: 14
+Ответ модели 10.12.2022 года было отправлено письмо в целях подготовки очередного доклада об исполнении подпункта «в» пункта 1 Перечня поручений по итогам совещания Президента Российской Федерации с членами Правительства Российской Федерации 30 ноября 2022 г. 
+
+Основная задача письма - представить информацию о выполнении подведомственными бюджетными и автономными учреждениями государственного задания за 2024 год и предложения по повышению эффективности их деятельности.
+
+На основании содержания письма и его задач, наиболее подходящее подразделение ФНС для ответственности за это письмо - "10- Административно-контрольное управление". 
+ Правильный ответ: 5
+Ответ модели 10.04.2024 - это дата, которая указана в тексте. Она соответствует номеру документа 1. 
+
+Финальный ответ: 1. 
+ Правильный ответ: 7
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 15
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 14- Управление регистрации и учета 
+ Правильный ответ: 7
+Ответ модели 2
+
+The text is about the development and approval of regulatory legal acts necessary for the implementation of the Federal Law on amending Article 161 of the Tax Code of the Russian Federation. The responsible department for this act is mentioned as "Контрольное управление" (Control Department), which corresponds to the structural unit with the number 2. Therefore, the final answer is 2. 
+ Правильный ответ: 3
+Ответ модели 7 - Правовое управление 
+ Правильный ответ: 7
+Ответ модели 26- Управление ЭД 
+ Правильный ответ: 7
+Ответ модели 21- Управление налогообложения имущества 
+ Правильный ответ: 17
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 1.0.0 
+ Правильный ответ: 7
+Ответ модели 8.000000000000000 
+ Правильный ответ: 5
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 25
+
+The text discusses the preparation and approval of a plan-schedule for normative legal acts necessary for the implementation of changes to the Federal Law on the Unified Federal Information Register containing data on the population of the Russian Federation. The document mentions the involvement of various federal agencies, including the Federal Tax Service (ФНС), in the process of developing and approving these acts. Given the content and the structure of the text, it is likely that the "Управление регистра населения" (Population Register Management) with the number 25 is responsible for this letter, as it deals with the population register and the related normative legal acts. 
+ Правильный ответ: 25
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 18
+Ответ модели 3. Управление налогообложения ЮЛ 
+ Правильный ответ: 7
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 10
+Ответ модели [5]finance_federal_affairs 
+ Правильный ответ: 18
+Ответ модели 17- Управление международного сотрудничества 
+ Правильный ответ: 17
+Ответ модели 20- Управление оперативного контроля 
+ Правильный ответ: 20
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 500 Server Error: Internal Server Error for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели 3- Управление налогообложения ЮЛ 
+ Правильный ответ: 3
+Ответ модели 11- Управление налогообложения ФЛ 
+ Правильный ответ: 6
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ошибка 500: {"detail":"Ошибка при /chat у LLM server: 422 Client Error: Unprocessable Entity for url: http://localhost:8022/chat"}
+Ответ модели 7- Правовое управление 
+ Правильный ответ: 7
+Ответ модели [7] Правовое управление 
+ Правильный ответ: 13
